@@ -1,0 +1,406 @@
+StateAb,Ticket,TicketNo,Surname,GivenName,Party,Preference
+"ACT"," A","1","FILLINGER","Marcus","Animal Justice Party",1
+"ACT"," A","1","MONTAGNE","Jessica","Animal Justice Party",2
+"ACT"," A","1","BAILEY","Steven","Katter's Australian Party",23
+"ACT"," A","1","ARNOLD","Joe","Katter's Australian Party",24
+"ACT"," A","1","SHEIKH","Simon","Australian Greens",26
+"ACT"," A","1","ESGUERRA","Indra","Australian Greens",27
+"ACT"," A","1","O'CONNOR","Mark","Stable Population Party",3
+"ACT"," A","1","GRAHAM","Greg","Stable Population Party",4
+"ACT"," A","1","BUCKNELL","Chris","Bullet Train For Australia",5
+"ACT"," A","1","LEMMEY","Michael James","Bullet Train For Australia",6
+"ACT"," A","1","CUBITT","Paul","Drug Law Reform",13
+"ACT"," A","1","DOWSON","Stacey","Drug Law Reform",14
+"ACT"," A","1","AVERY","Deborah","Sex Party",11
+"ACT"," A","1","MILLER","Jamie","Sex Party",12
+"ACT"," A","1","ROSS","Irwin","Rise Up Australia Party",15
+"ACT"," A","1","HENRIQUEZ","Jose","Rise Up Australia Party",16
+"ACT"," A","1","NITSCHKE","Philip","Voluntary Euthanasia Party",9
+"ACT"," A","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",10
+"ACT"," A","1","SLATTERY","Wayne Kenneth","Palmer United Party",17
+"ACT"," A","1","TEERMAN","Paul Gerard","Palmer United Party",18
+"ACT"," A","1","SESELJA","Zed","Liberal",21
+"ACT"," A","1","NASH","Merinda","Liberal",22
+"ACT"," A","1","LUNDY","Kate","Australian Labor Party",19
+"ACT"," A","1","SANT","Chris","Australian Labor Party",20
+"ACT"," A","1","FERNIE","Anthony Watson","Australian Independents",7
+"ACT"," A","1","PETERSEN","Valma","Australian Independents",8
+"ACT"," A","1","EZEKIEL-HART","Emmanuel","Independent",25
+"ACT"," B","1","FILLINGER","Marcus","Animal Justice Party",11
+"ACT"," B","1","MONTAGNE","Jessica","Animal Justice Party",12
+"ACT"," B","1","BAILEY","Steven","Katter's Australian Party",1
+"ACT"," B","1","ARNOLD","Joe","Katter's Australian Party",2
+"ACT"," B","1","SHEIKH","Simon","Australian Greens",17
+"ACT"," B","1","ESGUERRA","Indra","Australian Greens",18
+"ACT"," B","1","O'CONNOR","Mark","Stable Population Party",13
+"ACT"," B","1","GRAHAM","Greg","Stable Population Party",14
+"ACT"," B","1","BUCKNELL","Chris","Bullet Train For Australia",3
+"ACT"," B","1","LEMMEY","Michael James","Bullet Train For Australia",4
+"ACT"," B","1","CUBITT","Paul","Drug Law Reform",15
+"ACT"," B","1","DOWSON","Stacey","Drug Law Reform",16
+"ACT"," B","1","AVERY","Deborah","Sex Party",23
+"ACT"," B","1","MILLER","Jamie","Sex Party",24
+"ACT"," B","1","ROSS","Irwin","Rise Up Australia Party",9
+"ACT"," B","1","HENRIQUEZ","Jose","Rise Up Australia Party",10
+"ACT"," B","1","NITSCHKE","Philip","Voluntary Euthanasia Party",26
+"ACT"," B","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",27
+"ACT"," B","1","SLATTERY","Wayne Kenneth","Palmer United Party",5
+"ACT"," B","1","TEERMAN","Paul Gerard","Palmer United Party",6
+"ACT"," B","1","SESELJA","Zed","Liberal",19
+"ACT"," B","1","NASH","Merinda","Liberal",20
+"ACT"," B","1","LUNDY","Kate","Australian Labor Party",21
+"ACT"," B","1","SANT","Chris","Australian Labor Party",22
+"ACT"," B","1","FERNIE","Anthony Watson","Australian Independents",7
+"ACT"," B","1","PETERSEN","Valma","Australian Independents",8
+"ACT"," B","1","EZEKIEL-HART","Emmanuel","Independent",25
+"ACT"," C","1","FILLINGER","Marcus","Animal Justice Party",22
+"ACT"," C","1","MONTAGNE","Jessica","Animal Justice Party",23
+"ACT"," C","1","BAILEY","Steven","Katter's Australian Party",13
+"ACT"," C","1","ARNOLD","Joe","Katter's Australian Party",14
+"ACT"," C","1","SHEIKH","Simon","Australian Greens",1
+"ACT"," C","1","ESGUERRA","Indra","Australian Greens",2
+"ACT"," C","1","O'CONNOR","Mark","Stable Population Party",20
+"ACT"," C","1","GRAHAM","Greg","Stable Population Party",21
+"ACT"," C","1","BUCKNELL","Chris","Bullet Train For Australia",3
+"ACT"," C","1","LEMMEY","Michael James","Bullet Train For Australia",4
+"ACT"," C","1","CUBITT","Paul","Drug Law Reform",5
+"ACT"," C","1","DOWSON","Stacey","Drug Law Reform",6
+"ACT"," C","1","AVERY","Deborah","Sex Party",9
+"ACT"," C","1","MILLER","Jamie","Sex Party",10
+"ACT"," C","1","ROSS","Irwin","Rise Up Australia Party",26
+"ACT"," C","1","HENRIQUEZ","Jose","Rise Up Australia Party",27
+"ACT"," C","1","NITSCHKE","Philip","Voluntary Euthanasia Party",7
+"ACT"," C","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",8
+"ACT"," C","1","SLATTERY","Wayne Kenneth","Palmer United Party",18
+"ACT"," C","1","TEERMAN","Paul Gerard","Palmer United Party",19
+"ACT"," C","1","SESELJA","Zed","Liberal",24
+"ACT"," C","1","NASH","Merinda","Liberal",25
+"ACT"," C","1","LUNDY","Kate","Australian Labor Party",15
+"ACT"," C","1","SANT","Chris","Australian Labor Party",16
+"ACT"," C","1","FERNIE","Anthony Watson","Australian Independents",11
+"ACT"," C","1","PETERSEN","Valma","Australian Independents",12
+"ACT"," C","1","EZEKIEL-HART","Emmanuel","Independent",17
+"ACT"," D","1","FILLINGER","Marcus","Animal Justice Party",7
+"ACT"," D","2","FILLINGER","Marcus","Animal Justice Party",7
+"ACT"," D","3","FILLINGER","Marcus","Animal Justice Party",7
+"ACT"," D","1","MONTAGNE","Jessica","Animal Justice Party",8
+"ACT"," D","2","MONTAGNE","Jessica","Animal Justice Party",8
+"ACT"," D","3","MONTAGNE","Jessica","Animal Justice Party",8
+"ACT"," D","1","BAILEY","Steven","Katter's Australian Party",15
+"ACT"," D","2","BAILEY","Steven","Katter's Australian Party",15
+"ACT"," D","3","BAILEY","Steven","Katter's Australian Party",15
+"ACT"," D","1","ARNOLD","Joe","Katter's Australian Party",16
+"ACT"," D","2","ARNOLD","Joe","Katter's Australian Party",16
+"ACT"," D","3","ARNOLD","Joe","Katter's Australian Party",16
+"ACT"," D","1","SHEIKH","Simon","Australian Greens",18
+"ACT"," D","2","SHEIKH","Simon","Australian Greens",20
+"ACT"," D","3","SHEIKH","Simon","Australian Greens",22
+"ACT"," D","1","ESGUERRA","Indra","Australian Greens",19
+"ACT"," D","2","ESGUERRA","Indra","Australian Greens",21
+"ACT"," D","3","ESGUERRA","Indra","Australian Greens",23
+"ACT"," D","1","O'CONNOR","Mark","Stable Population Party",1
+"ACT"," D","2","O'CONNOR","Mark","Stable Population Party",1
+"ACT"," D","3","O'CONNOR","Mark","Stable Population Party",1
+"ACT"," D","1","GRAHAM","Greg","Stable Population Party",2
+"ACT"," D","2","GRAHAM","Greg","Stable Population Party",2
+"ACT"," D","3","GRAHAM","Greg","Stable Population Party",2
+"ACT"," D","1","BUCKNELL","Chris","Bullet Train For Australia",5
+"ACT"," D","2","BUCKNELL","Chris","Bullet Train For Australia",5
+"ACT"," D","3","BUCKNELL","Chris","Bullet Train For Australia",5
+"ACT"," D","1","LEMMEY","Michael James","Bullet Train For Australia",6
+"ACT"," D","2","LEMMEY","Michael James","Bullet Train For Australia",6
+"ACT"," D","3","LEMMEY","Michael James","Bullet Train For Australia",6
+"ACT"," D","1","CUBITT","Paul","Drug Law Reform",9
+"ACT"," D","2","CUBITT","Paul","Drug Law Reform",9
+"ACT"," D","3","CUBITT","Paul","Drug Law Reform",9
+"ACT"," D","1","DOWSON","Stacey","Drug Law Reform",10
+"ACT"," D","2","DOWSON","Stacey","Drug Law Reform",10
+"ACT"," D","3","DOWSON","Stacey","Drug Law Reform",10
+"ACT"," D","1","AVERY","Deborah","Sex Party",13
+"ACT"," D","2","AVERY","Deborah","Sex Party",13
+"ACT"," D","3","AVERY","Deborah","Sex Party",13
+"ACT"," D","1","MILLER","Jamie","Sex Party",14
+"ACT"," D","2","MILLER","Jamie","Sex Party",14
+"ACT"," D","3","MILLER","Jamie","Sex Party",14
+"ACT"," D","1","ROSS","Irwin","Rise Up Australia Party",26
+"ACT"," D","2","ROSS","Irwin","Rise Up Australia Party",26
+"ACT"," D","3","ROSS","Irwin","Rise Up Australia Party",26
+"ACT"," D","1","HENRIQUEZ","Jose","Rise Up Australia Party",27
+"ACT"," D","2","HENRIQUEZ","Jose","Rise Up Australia Party",27
+"ACT"," D","3","HENRIQUEZ","Jose","Rise Up Australia Party",27
+"ACT"," D","1","NITSCHKE","Philip","Voluntary Euthanasia Party",11
+"ACT"," D","2","NITSCHKE","Philip","Voluntary Euthanasia Party",11
+"ACT"," D","3","NITSCHKE","Philip","Voluntary Euthanasia Party",11
+"ACT"," D","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",12
+"ACT"," D","2","MACDOUGALL","Susan","Voluntary Euthanasia Party",12
+"ACT"," D","3","MACDOUGALL","Susan","Voluntary Euthanasia Party",12
+"ACT"," D","1","SLATTERY","Wayne Kenneth","Palmer United Party",24
+"ACT"," D","2","SLATTERY","Wayne Kenneth","Palmer United Party",24
+"ACT"," D","3","SLATTERY","Wayne Kenneth","Palmer United Party",24
+"ACT"," D","1","TEERMAN","Paul Gerard","Palmer United Party",25
+"ACT"," D","2","TEERMAN","Paul Gerard","Palmer United Party",25
+"ACT"," D","3","TEERMAN","Paul Gerard","Palmer United Party",25
+"ACT"," D","1","SESELJA","Zed","Liberal",22
+"ACT"," D","2","SESELJA","Zed","Liberal",22
+"ACT"," D","3","SESELJA","Zed","Liberal",18
+"ACT"," D","1","NASH","Merinda","Liberal",23
+"ACT"," D","2","NASH","Merinda","Liberal",23
+"ACT"," D","3","NASH","Merinda","Liberal",19
+"ACT"," D","1","LUNDY","Kate","Australian Labor Party",20
+"ACT"," D","2","LUNDY","Kate","Australian Labor Party",18
+"ACT"," D","3","LUNDY","Kate","Australian Labor Party",20
+"ACT"," D","1","SANT","Chris","Australian Labor Party",21
+"ACT"," D","2","SANT","Chris","Australian Labor Party",19
+"ACT"," D","3","SANT","Chris","Australian Labor Party",21
+"ACT"," D","1","FERNIE","Anthony Watson","Australian Independents",3
+"ACT"," D","2","FERNIE","Anthony Watson","Australian Independents",3
+"ACT"," D","3","FERNIE","Anthony Watson","Australian Independents",3
+"ACT"," D","1","PETERSEN","Valma","Australian Independents",4
+"ACT"," D","2","PETERSEN","Valma","Australian Independents",4
+"ACT"," D","3","PETERSEN","Valma","Australian Independents",4
+"ACT"," D","1","EZEKIEL-HART","Emmanuel","Independent",17
+"ACT"," D","2","EZEKIEL-HART","Emmanuel","Independent",17
+"ACT"," D","3","EZEKIEL-HART","Emmanuel","Independent",17
+"ACT"," E","1","FILLINGER","Marcus","Animal Justice Party",8
+"ACT"," E","1","MONTAGNE","Jessica","Animal Justice Party",9
+"ACT"," E","1","BAILEY","Steven","Katter's Australian Party",18
+"ACT"," E","1","ARNOLD","Joe","Katter's Australian Party",19
+"ACT"," E","1","SHEIKH","Simon","Australian Greens",16
+"ACT"," E","1","ESGUERRA","Indra","Australian Greens",17
+"ACT"," E","1","O'CONNOR","Mark","Stable Population Party",6
+"ACT"," E","1","GRAHAM","Greg","Stable Population Party",7
+"ACT"," E","1","BUCKNELL","Chris","Bullet Train For Australia",1
+"ACT"," E","1","LEMMEY","Michael James","Bullet Train For Australia",2
+"ACT"," E","1","CUBITT","Paul","Drug Law Reform",12
+"ACT"," E","1","DOWSON","Stacey","Drug Law Reform",13
+"ACT"," E","1","AVERY","Deborah","Sex Party",14
+"ACT"," E","1","MILLER","Jamie","Sex Party",15
+"ACT"," E","1","ROSS","Irwin","Rise Up Australia Party",26
+"ACT"," E","1","HENRIQUEZ","Jose","Rise Up Australia Party",27
+"ACT"," E","1","NITSCHKE","Philip","Voluntary Euthanasia Party",10
+"ACT"," E","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",11
+"ACT"," E","1","SLATTERY","Wayne Kenneth","Palmer United Party",20
+"ACT"," E","1","TEERMAN","Paul Gerard","Palmer United Party",21
+"ACT"," E","1","SESELJA","Zed","Liberal",24
+"ACT"," E","1","NASH","Merinda","Liberal",25
+"ACT"," E","1","LUNDY","Kate","Australian Labor Party",22
+"ACT"," E","1","SANT","Chris","Australian Labor Party",23
+"ACT"," E","1","FERNIE","Anthony Watson","Australian Independents",4
+"ACT"," E","1","PETERSEN","Valma","Australian Independents",5
+"ACT"," E","1","EZEKIEL-HART","Emmanuel","Independent",3
+"ACT"," F","1","FILLINGER","Marcus","Animal Justice Party",20
+"ACT"," F","1","MONTAGNE","Jessica","Animal Justice Party",21
+"ACT"," F","1","BAILEY","Steven","Katter's Australian Party",26
+"ACT"," F","1","ARNOLD","Joe","Katter's Australian Party",27
+"ACT"," F","1","SHEIKH","Simon","Australian Greens",5
+"ACT"," F","1","ESGUERRA","Indra","Australian Greens",6
+"ACT"," F","1","O'CONNOR","Mark","Stable Population Party",22
+"ACT"," F","1","GRAHAM","Greg","Stable Population Party",23
+"ACT"," F","1","BUCKNELL","Chris","Bullet Train For Australia",24
+"ACT"," F","1","LEMMEY","Michael James","Bullet Train For Australia",25
+"ACT"," F","1","CUBITT","Paul","Drug Law Reform",1
+"ACT"," F","1","DOWSON","Stacey","Drug Law Reform",2
+"ACT"," F","1","AVERY","Deborah","Sex Party",3
+"ACT"," F","1","MILLER","Jamie","Sex Party",4
+"ACT"," F","1","ROSS","Irwin","Rise Up Australia Party",18
+"ACT"," F","1","HENRIQUEZ","Jose","Rise Up Australia Party",19
+"ACT"," F","1","NITSCHKE","Philip","Voluntary Euthanasia Party",14
+"ACT"," F","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",15
+"ACT"," F","1","SLATTERY","Wayne Kenneth","Palmer United Party",16
+"ACT"," F","1","TEERMAN","Paul Gerard","Palmer United Party",17
+"ACT"," F","1","SESELJA","Zed","Liberal",9
+"ACT"," F","1","NASH","Merinda","Liberal",10
+"ACT"," F","1","LUNDY","Kate","Australian Labor Party",7
+"ACT"," F","1","SANT","Chris","Australian Labor Party",8
+"ACT"," F","1","FERNIE","Anthony Watson","Australian Independents",11
+"ACT"," F","1","PETERSEN","Valma","Australian Independents",12
+"ACT"," F","1","EZEKIEL-HART","Emmanuel","Independent",13
+"ACT"," G","1","FILLINGER","Marcus","Animal Justice Party",7
+"ACT"," G","1","MONTAGNE","Jessica","Animal Justice Party",8
+"ACT"," G","1","BAILEY","Steven","Katter's Australian Party",19
+"ACT"," G","1","ARNOLD","Joe","Katter's Australian Party",20
+"ACT"," G","1","SHEIKH","Simon","Australian Greens",15
+"ACT"," G","1","ESGUERRA","Indra","Australian Greens",16
+"ACT"," G","1","O'CONNOR","Mark","Stable Population Party",11
+"ACT"," G","1","GRAHAM","Greg","Stable Population Party",12
+"ACT"," G","1","BUCKNELL","Chris","Bullet Train For Australia",9
+"ACT"," G","1","LEMMEY","Michael James","Bullet Train For Australia",10
+"ACT"," G","1","CUBITT","Paul","Drug Law Reform",5
+"ACT"," G","1","DOWSON","Stacey","Drug Law Reform",6
+"ACT"," G","1","AVERY","Deborah","Sex Party",1
+"ACT"," G","1","MILLER","Jamie","Sex Party",2
+"ACT"," G","1","ROSS","Irwin","Rise Up Australia Party",26
+"ACT"," G","1","HENRIQUEZ","Jose","Rise Up Australia Party",27
+"ACT"," G","1","NITSCHKE","Philip","Voluntary Euthanasia Party",3
+"ACT"," G","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",4
+"ACT"," G","1","SLATTERY","Wayne Kenneth","Palmer United Party",21
+"ACT"," G","1","TEERMAN","Paul Gerard","Palmer United Party",22
+"ACT"," G","1","SESELJA","Zed","Liberal",24
+"ACT"," G","1","NASH","Merinda","Liberal",23
+"ACT"," G","1","LUNDY","Kate","Australian Labor Party",17
+"ACT"," G","1","SANT","Chris","Australian Labor Party",18
+"ACT"," G","1","FERNIE","Anthony Watson","Australian Independents",13
+"ACT"," G","1","PETERSEN","Valma","Australian Independents",14
+"ACT"," G","1","EZEKIEL-HART","Emmanuel","Independent",25
+"ACT"," H","1","FILLINGER","Marcus","Animal Justice Party",15
+"ACT"," H","1","MONTAGNE","Jessica","Animal Justice Party",16
+"ACT"," H","1","BAILEY","Steven","Katter's Australian Party",13
+"ACT"," H","1","ARNOLD","Joe","Katter's Australian Party",14
+"ACT"," H","1","SHEIKH","Simon","Australian Greens",25
+"ACT"," H","1","ESGUERRA","Indra","Australian Greens",26
+"ACT"," H","1","O'CONNOR","Mark","Stable Population Party",11
+"ACT"," H","1","GRAHAM","Greg","Stable Population Party",12
+"ACT"," H","1","BUCKNELL","Chris","Bullet Train For Australia",3
+"ACT"," H","1","LEMMEY","Michael James","Bullet Train For Australia",4
+"ACT"," H","1","CUBITT","Paul","Drug Law Reform",19
+"ACT"," H","1","DOWSON","Stacey","Drug Law Reform",20
+"ACT"," H","1","AVERY","Deborah","Sex Party",23
+"ACT"," H","1","MILLER","Jamie","Sex Party",24
+"ACT"," H","1","ROSS","Irwin","Rise Up Australia Party",1
+"ACT"," H","1","HENRIQUEZ","Jose","Rise Up Australia Party",2
+"ACT"," H","1","NITSCHKE","Philip","Voluntary Euthanasia Party",21
+"ACT"," H","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",22
+"ACT"," H","1","SLATTERY","Wayne Kenneth","Palmer United Party",9
+"ACT"," H","1","TEERMAN","Paul Gerard","Palmer United Party",10
+"ACT"," H","1","SESELJA","Zed","Liberal",7
+"ACT"," H","1","NASH","Merinda","Liberal",8
+"ACT"," H","1","LUNDY","Kate","Australian Labor Party",17
+"ACT"," H","1","SANT","Chris","Australian Labor Party",18
+"ACT"," H","1","FERNIE","Anthony Watson","Australian Independents",5
+"ACT"," H","1","PETERSEN","Valma","Australian Independents",6
+"ACT"," H","1","EZEKIEL-HART","Emmanuel","Independent",27
+"ACT"," I","1","FILLINGER","Marcus","Animal Justice Party",11
+"ACT"," I","1","MONTAGNE","Jessica","Animal Justice Party",12
+"ACT"," I","1","BAILEY","Steven","Katter's Australian Party",21
+"ACT"," I","1","ARNOLD","Joe","Katter's Australian Party",22
+"ACT"," I","1","SHEIKH","Simon","Australian Greens",17
+"ACT"," I","1","ESGUERRA","Indra","Australian Greens",18
+"ACT"," I","1","O'CONNOR","Mark","Stable Population Party",7
+"ACT"," I","1","GRAHAM","Greg","Stable Population Party",8
+"ACT"," I","1","BUCKNELL","Chris","Bullet Train For Australia",13
+"ACT"," I","1","LEMMEY","Michael James","Bullet Train For Australia",14
+"ACT"," I","1","CUBITT","Paul","Drug Law Reform",9
+"ACT"," I","1","DOWSON","Stacey","Drug Law Reform",10
+"ACT"," I","1","AVERY","Deborah","Sex Party",3
+"ACT"," I","1","MILLER","Jamie","Sex Party",4
+"ACT"," I","1","ROSS","Irwin","Rise Up Australia Party",23
+"ACT"," I","1","HENRIQUEZ","Jose","Rise Up Australia Party",24
+"ACT"," I","1","NITSCHKE","Philip","Voluntary Euthanasia Party",1
+"ACT"," I","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",2
+"ACT"," I","1","SLATTERY","Wayne Kenneth","Palmer United Party",15
+"ACT"," I","1","TEERMAN","Paul Gerard","Palmer United Party",16
+"ACT"," I","1","SESELJA","Zed","Liberal",25
+"ACT"," I","1","NASH","Merinda","Liberal",26
+"ACT"," I","1","LUNDY","Kate","Australian Labor Party",19
+"ACT"," I","1","SANT","Chris","Australian Labor Party",20
+"ACT"," I","1","FERNIE","Anthony Watson","Australian Independents",5
+"ACT"," I","1","PETERSEN","Valma","Australian Independents",6
+"ACT"," I","1","EZEKIEL-HART","Emmanuel","Independent",27
+"ACT"," J","1","FILLINGER","Marcus","Animal Justice Party",12
+"ACT"," J","1","MONTAGNE","Jessica","Animal Justice Party",13
+"ACT"," J","1","BAILEY","Steven","Katter's Australian Party",14
+"ACT"," J","1","ARNOLD","Joe","Katter's Australian Party",15
+"ACT"," J","1","SHEIKH","Simon","Australian Greens",18
+"ACT"," J","1","ESGUERRA","Indra","Australian Greens",19
+"ACT"," J","1","O'CONNOR","Mark","Stable Population Party",20
+"ACT"," J","1","GRAHAM","Greg","Stable Population Party",21
+"ACT"," J","1","BUCKNELL","Chris","Bullet Train For Australia",8
+"ACT"," J","1","LEMMEY","Michael James","Bullet Train For Australia",9
+"ACT"," J","1","CUBITT","Paul","Drug Law Reform",26
+"ACT"," J","1","DOWSON","Stacey","Drug Law Reform",27
+"ACT"," J","1","AVERY","Deborah","Sex Party",10
+"ACT"," J","1","MILLER","Jamie","Sex Party",11
+"ACT"," J","1","ROSS","Irwin","Rise Up Australia Party",6
+"ACT"," J","1","HENRIQUEZ","Jose","Rise Up Australia Party",7
+"ACT"," J","1","NITSCHKE","Philip","Voluntary Euthanasia Party",16
+"ACT"," J","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",17
+"ACT"," J","1","SLATTERY","Wayne Kenneth","Palmer United Party",1
+"ACT"," J","1","TEERMAN","Paul Gerard","Palmer United Party",2
+"ACT"," J","1","SESELJA","Zed","Liberal",22
+"ACT"," J","1","NASH","Merinda","Liberal",23
+"ACT"," J","1","LUNDY","Kate","Australian Labor Party",24
+"ACT"," J","1","SANT","Chris","Australian Labor Party",25
+"ACT"," J","1","FERNIE","Anthony Watson","Australian Independents",3
+"ACT"," J","1","PETERSEN","Valma","Australian Independents",4
+"ACT"," J","1","EZEKIEL-HART","Emmanuel","Independent",5
+"ACT"," K","1","FILLINGER","Marcus","Animal Justice Party",12
+"ACT"," K","1","MONTAGNE","Jessica","Animal Justice Party",6
+"ACT"," K","1","BAILEY","Steven","Katter's Australian Party",13
+"ACT"," K","1","ARNOLD","Joe","Katter's Australian Party",7
+"ACT"," K","1","SHEIKH","Simon","Australian Greens",27
+"ACT"," K","1","ESGUERRA","Indra","Australian Greens",26
+"ACT"," K","1","O'CONNOR","Mark","Stable Population Party",17
+"ACT"," K","1","GRAHAM","Greg","Stable Population Party",5
+"ACT"," K","1","BUCKNELL","Chris","Bullet Train For Australia",3
+"ACT"," K","1","LEMMEY","Michael James","Bullet Train For Australia",4
+"ACT"," K","1","CUBITT","Paul","Drug Law Reform",22
+"ACT"," K","1","DOWSON","Stacey","Drug Law Reform",16
+"ACT"," K","1","AVERY","Deborah","Sex Party",18
+"ACT"," K","1","MILLER","Jamie","Sex Party",20
+"ACT"," K","1","ROSS","Irwin","Rise Up Australia Party",11
+"ACT"," K","1","HENRIQUEZ","Jose","Rise Up Australia Party",10
+"ACT"," K","1","NITSCHKE","Philip","Voluntary Euthanasia Party",23
+"ACT"," K","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",21
+"ACT"," K","1","SLATTERY","Wayne Kenneth","Palmer United Party",8
+"ACT"," K","1","TEERMAN","Paul Gerard","Palmer United Party",9
+"ACT"," K","1","SESELJA","Zed","Liberal",1
+"ACT"," K","1","NASH","Merinda","Liberal",2
+"ACT"," K","1","LUNDY","Kate","Australian Labor Party",24
+"ACT"," K","1","SANT","Chris","Australian Labor Party",25
+"ACT"," K","1","FERNIE","Anthony Watson","Australian Independents",14
+"ACT"," K","1","PETERSEN","Valma","Australian Independents",15
+"ACT"," K","1","EZEKIEL-HART","Emmanuel","Independent",19
+"ACT"," L","1","FILLINGER","Marcus","Animal Justice Party",11
+"ACT"," L","1","MONTAGNE","Jessica","Animal Justice Party",12
+"ACT"," L","1","BAILEY","Steven","Katter's Australian Party",7
+"ACT"," L","1","ARNOLD","Joe","Katter's Australian Party",8
+"ACT"," L","1","SHEIKH","Simon","Australian Greens",3
+"ACT"," L","1","ESGUERRA","Indra","Australian Greens",4
+"ACT"," L","1","O'CONNOR","Mark","Stable Population Party",19
+"ACT"," L","1","GRAHAM","Greg","Stable Population Party",20
+"ACT"," L","1","BUCKNELL","Chris","Bullet Train For Australia",5
+"ACT"," L","1","LEMMEY","Michael James","Bullet Train For Australia",6
+"ACT"," L","1","CUBITT","Paul","Drug Law Reform",13
+"ACT"," L","1","DOWSON","Stacey","Drug Law Reform",14
+"ACT"," L","1","AVERY","Deborah","Sex Party",9
+"ACT"," L","1","MILLER","Jamie","Sex Party",10
+"ACT"," L","1","ROSS","Irwin","Rise Up Australia Party",24
+"ACT"," L","1","HENRIQUEZ","Jose","Rise Up Australia Party",25
+"ACT"," L","1","NITSCHKE","Philip","Voluntary Euthanasia Party",15
+"ACT"," L","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",16
+"ACT"," L","1","SLATTERY","Wayne Kenneth","Palmer United Party",17
+"ACT"," L","1","TEERMAN","Paul Gerard","Palmer United Party",18
+"ACT"," L","1","SESELJA","Zed","Liberal",27
+"ACT"," L","1","NASH","Merinda","Liberal",26
+"ACT"," L","1","LUNDY","Kate","Australian Labor Party",1
+"ACT"," L","1","SANT","Chris","Australian Labor Party",2
+"ACT"," L","1","FERNIE","Anthony Watson","Australian Independents",22
+"ACT"," L","1","PETERSEN","Valma","Australian Independents",23
+"ACT"," L","1","EZEKIEL-HART","Emmanuel","Independent",21
+"ACT"," M","1","FILLINGER","Marcus","Animal Justice Party",11
+"ACT"," M","1","MONTAGNE","Jessica","Animal Justice Party",12
+"ACT"," M","1","BAILEY","Steven","Katter's Australian Party",17
+"ACT"," M","1","ARNOLD","Joe","Katter's Australian Party",18
+"ACT"," M","1","SHEIKH","Simon","Australian Greens",22
+"ACT"," M","1","ESGUERRA","Indra","Australian Greens",23
+"ACT"," M","1","O'CONNOR","Mark","Stable Population Party",13
+"ACT"," M","1","GRAHAM","Greg","Stable Population Party",14
+"ACT"," M","1","BUCKNELL","Chris","Bullet Train For Australia",9
+"ACT"," M","1","LEMMEY","Michael James","Bullet Train For Australia",10
+"ACT"," M","1","CUBITT","Paul","Drug Law Reform",5
+"ACT"," M","1","DOWSON","Stacey","Drug Law Reform",6
+"ACT"," M","1","AVERY","Deborah","Sex Party",3
+"ACT"," M","1","MILLER","Jamie","Sex Party",4
+"ACT"," M","1","ROSS","Irwin","Rise Up Australia Party",15
+"ACT"," M","1","HENRIQUEZ","Jose","Rise Up Australia Party",16
+"ACT"," M","1","NITSCHKE","Philip","Voluntary Euthanasia Party",7
+"ACT"," M","1","MACDOUGALL","Susan","Voluntary Euthanasia Party",8
+"ACT"," M","1","SLATTERY","Wayne Kenneth","Palmer United Party",19
+"ACT"," M","1","TEERMAN","Paul Gerard","Palmer United Party",20
+"ACT"," M","1","SESELJA","Zed","Liberal",24
+"ACT"," M","1","NASH","Merinda","Liberal",25
+"ACT"," M","1","LUNDY","Kate","Australian Labor Party",26
+"ACT"," M","1","SANT","Chris","Australian Labor Party",27
+"ACT"," M","1","FERNIE","Anthony Watson","Australian Independents",1
+"ACT"," M","1","PETERSEN","Valma","Australian Independents",2
+"ACT"," M","1","EZEKIEL-HART","Emmanuel","Independent",21

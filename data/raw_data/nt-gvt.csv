@@ -1,0 +1,361 @@
+StateAb,Ticket,TicketNo,Surname,GivenName,Party,Preference
+"NT"," A","1","TE WAKE","Douglas","Palmer United Party",1
+"NT"," A","1","McCABE","John Brian Douglas","Palmer United Party",2
+"NT"," A","1","BELL","Gary","Uniting Australia Party",24
+"NT"," A","1","WATT","Kathryn","Uniting Australia Party",23
+"NT"," A","1","MILES","Jim","Stable Population Party",19
+"NT"," A","1","RUSSELL","Mark","Stable Population Party",20
+"NT"," A","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",17
+"NT"," A","1","GADAMBUA","Jeannie","A.F.N.P.P.",18
+"NT"," A","1","SCULLION","Nigel","Country Liberals (NT)",3
+"NT"," A","1","FAZLDEEN","Linda","Country Liberals (NT)",4
+"NT"," A","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",21
+"NT"," A","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",22
+"NT"," A","1","EDWARDS","Joanne Louise","Sex Party",13
+"NT"," A","1","RANDALL","Tracey Lee","Sex Party",14
+"NT"," A","1","WORK","Vernon","Citizens Electoral Council",9
+"NT"," A","1","STANKOVIC","Mile","Citizens Electoral Council",10
+"NT"," A","1","GRAHAM","Matt","Shooters and Fishers",15
+"NT"," A","1","RIGHTON","Christopher James","Shooters and Fishers",16
+"NT"," A","1","PILE","Jan","Rise Up Australia Party",7
+"NT"," A","1","COX","Michael","Rise Up Australia Party",8
+"NT"," A","1","WILLIAMS","Warren H","Australian Greens",11
+"NT"," A","1","BRAND","Michael","Australian Greens",12
+"NT"," A","1","WALCOTT","Phil","Australian Independents",5
+"NT"," A","1","FUTCHER","Lisa","Australian Independents",6
+"NT"," B","1","TE WAKE","Douglas","Palmer United Party",19
+"NT"," B","1","McCABE","John Brian Douglas","Palmer United Party",20
+"NT"," B","1","BELL","Gary","Uniting Australia Party",1
+"NT"," B","1","WATT","Kathryn","Uniting Australia Party",2
+"NT"," B","1","MILES","Jim","Stable Population Party",7
+"NT"," B","1","RUSSELL","Mark","Stable Population Party",8
+"NT"," B","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",13
+"NT"," B","1","GADAMBUA","Jeannie","A.F.N.P.P.",14
+"NT"," B","1","SCULLION","Nigel","Country Liberals (NT)",23
+"NT"," B","1","FAZLDEEN","Linda","Country Liberals (NT)",24
+"NT"," B","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",21
+"NT"," B","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",22
+"NT"," B","1","EDWARDS","Joanne Louise","Sex Party",5
+"NT"," B","1","RANDALL","Tracey Lee","Sex Party",6
+"NT"," B","1","WORK","Vernon","Citizens Electoral Council",9
+"NT"," B","1","STANKOVIC","Mile","Citizens Electoral Council",10
+"NT"," B","1","GRAHAM","Matt","Shooters and Fishers",3
+"NT"," B","1","RIGHTON","Christopher James","Shooters and Fishers",4
+"NT"," B","1","PILE","Jan","Rise Up Australia Party",11
+"NT"," B","1","COX","Michael","Rise Up Australia Party",12
+"NT"," B","1","WILLIAMS","Warren H","Australian Greens",17
+"NT"," B","1","BRAND","Michael","Australian Greens",18
+"NT"," B","1","WALCOTT","Phil","Australian Independents",15
+"NT"," B","1","FUTCHER","Lisa","Australian Independents",16
+"NT"," C","1","TE WAKE","Douglas","Palmer United Party",11
+"NT"," C","2","TE WAKE","Douglas","Palmer United Party",11
+"NT"," C","3","TE WAKE","Douglas","Palmer United Party",11
+"NT"," C","1","McCABE","John Brian Douglas","Palmer United Party",12
+"NT"," C","2","McCABE","John Brian Douglas","Palmer United Party",12
+"NT"," C","3","McCABE","John Brian Douglas","Palmer United Party",12
+"NT"," C","1","BELL","Gary","Uniting Australia Party",7
+"NT"," C","2","BELL","Gary","Uniting Australia Party",7
+"NT"," C","3","BELL","Gary","Uniting Australia Party",7
+"NT"," C","1","WATT","Kathryn","Uniting Australia Party",8
+"NT"," C","2","WATT","Kathryn","Uniting Australia Party",8
+"NT"," C","3","WATT","Kathryn","Uniting Australia Party",8
+"NT"," C","1","MILES","Jim","Stable Population Party",1
+"NT"," C","2","MILES","Jim","Stable Population Party",1
+"NT"," C","3","MILES","Jim","Stable Population Party",1
+"NT"," C","1","RUSSELL","Mark","Stable Population Party",2
+"NT"," C","2","RUSSELL","Mark","Stable Population Party",2
+"NT"," C","3","RUSSELL","Mark","Stable Population Party",2
+"NT"," C","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",3
+"NT"," C","2","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",3
+"NT"," C","3","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",3
+"NT"," C","1","GADAMBUA","Jeannie","A.F.N.P.P.",4
+"NT"," C","2","GADAMBUA","Jeannie","A.F.N.P.P.",4
+"NT"," C","3","GADAMBUA","Jeannie","A.F.N.P.P.",4
+"NT"," C","1","SCULLION","Nigel","Country Liberals (NT)",17
+"NT"," C","2","SCULLION","Nigel","Country Liberals (NT)",15
+"NT"," C","3","SCULLION","Nigel","Country Liberals (NT)",13
+"NT"," C","1","FAZLDEEN","Linda","Country Liberals (NT)",18
+"NT"," C","2","FAZLDEEN","Linda","Country Liberals (NT)",16
+"NT"," C","3","FAZLDEEN","Linda","Country Liberals (NT)",14
+"NT"," C","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",15
+"NT"," C","2","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",13
+"NT"," C","3","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",17
+"NT"," C","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",16
+"NT"," C","2","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",14
+"NT"," C","3","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",18
+"NT"," C","1","EDWARDS","Joanne Louise","Sex Party",9
+"NT"," C","2","EDWARDS","Joanne Louise","Sex Party",9
+"NT"," C","3","EDWARDS","Joanne Louise","Sex Party",9
+"NT"," C","1","RANDALL","Tracey Lee","Sex Party",10
+"NT"," C","2","RANDALL","Tracey Lee","Sex Party",10
+"NT"," C","3","RANDALL","Tracey Lee","Sex Party",10
+"NT"," C","1","WORK","Vernon","Citizens Electoral Council",23
+"NT"," C","2","WORK","Vernon","Citizens Electoral Council",23
+"NT"," C","3","WORK","Vernon","Citizens Electoral Council",23
+"NT"," C","1","STANKOVIC","Mile","Citizens Electoral Council",24
+"NT"," C","2","STANKOVIC","Mile","Citizens Electoral Council",24
+"NT"," C","3","STANKOVIC","Mile","Citizens Electoral Council",24
+"NT"," C","1","GRAHAM","Matt","Shooters and Fishers",19
+"NT"," C","2","GRAHAM","Matt","Shooters and Fishers",19
+"NT"," C","3","GRAHAM","Matt","Shooters and Fishers",19
+"NT"," C","1","RIGHTON","Christopher James","Shooters and Fishers",20
+"NT"," C","2","RIGHTON","Christopher James","Shooters and Fishers",20
+"NT"," C","3","RIGHTON","Christopher James","Shooters and Fishers",20
+"NT"," C","1","PILE","Jan","Rise Up Australia Party",21
+"NT"," C","2","PILE","Jan","Rise Up Australia Party",21
+"NT"," C","3","PILE","Jan","Rise Up Australia Party",21
+"NT"," C","1","COX","Michael","Rise Up Australia Party",22
+"NT"," C","2","COX","Michael","Rise Up Australia Party",22
+"NT"," C","3","COX","Michael","Rise Up Australia Party",22
+"NT"," C","1","WILLIAMS","Warren H","Australian Greens",13
+"NT"," C","2","WILLIAMS","Warren H","Australian Greens",17
+"NT"," C","3","WILLIAMS","Warren H","Australian Greens",15
+"NT"," C","1","BRAND","Michael","Australian Greens",14
+"NT"," C","2","BRAND","Michael","Australian Greens",18
+"NT"," C","3","BRAND","Michael","Australian Greens",16
+"NT"," C","1","WALCOTT","Phil","Australian Independents",5
+"NT"," C","2","WALCOTT","Phil","Australian Independents",5
+"NT"," C","3","WALCOTT","Phil","Australian Independents",5
+"NT"," C","1","FUTCHER","Lisa","Australian Independents",6
+"NT"," C","2","FUTCHER","Lisa","Australian Independents",6
+"NT"," C","3","FUTCHER","Lisa","Australian Independents",6
+"NT"," D","1","TE WAKE","Douglas","Palmer United Party",5
+"NT"," D","1","McCABE","John Brian Douglas","Palmer United Party",6
+"NT"," D","1","BELL","Gary","Uniting Australia Party",7
+"NT"," D","1","WATT","Kathryn","Uniting Australia Party",8
+"NT"," D","1","MILES","Jim","Stable Population Party",3
+"NT"," D","1","RUSSELL","Mark","Stable Population Party",4
+"NT"," D","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",1
+"NT"," D","1","GADAMBUA","Jeannie","A.F.N.P.P.",2
+"NT"," D","1","SCULLION","Nigel","Country Liberals (NT)",21
+"NT"," D","1","FAZLDEEN","Linda","Country Liberals (NT)",22
+"NT"," D","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",23
+"NT"," D","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",24
+"NT"," D","1","EDWARDS","Joanne Louise","Sex Party",11
+"NT"," D","1","RANDALL","Tracey Lee","Sex Party",12
+"NT"," D","1","WORK","Vernon","Citizens Electoral Council",13
+"NT"," D","1","STANKOVIC","Mile","Citizens Electoral Council",14
+"NT"," D","1","GRAHAM","Matt","Shooters and Fishers",9
+"NT"," D","1","RIGHTON","Christopher James","Shooters and Fishers",10
+"NT"," D","1","PILE","Jan","Rise Up Australia Party",15
+"NT"," D","1","COX","Michael","Rise Up Australia Party",16
+"NT"," D","1","WILLIAMS","Warren H","Australian Greens",19
+"NT"," D","1","BRAND","Michael","Australian Greens",20
+"NT"," D","1","WALCOTT","Phil","Australian Independents",17
+"NT"," D","1","FUTCHER","Lisa","Australian Independents",18
+"NT"," E","1","TE WAKE","Douglas","Palmer United Party",5
+"NT"," E","1","McCABE","John Brian Douglas","Palmer United Party",6
+"NT"," E","1","BELL","Gary","Uniting Australia Party",9
+"NT"," E","1","WATT","Kathryn","Uniting Australia Party",10
+"NT"," E","1","MILES","Jim","Stable Population Party",11
+"NT"," E","1","RUSSELL","Mark","Stable Population Party",12
+"NT"," E","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",3
+"NT"," E","1","GADAMBUA","Jeannie","A.F.N.P.P.",4
+"NT"," E","1","SCULLION","Nigel","Country Liberals (NT)",1
+"NT"," E","1","FAZLDEEN","Linda","Country Liberals (NT)",2
+"NT"," E","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",19
+"NT"," E","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",20
+"NT"," E","1","EDWARDS","Joanne Louise","Sex Party",15
+"NT"," E","1","RANDALL","Tracey Lee","Sex Party",16
+"NT"," E","1","WORK","Vernon","Citizens Electoral Council",17
+"NT"," E","1","STANKOVIC","Mile","Citizens Electoral Council",18
+"NT"," E","1","GRAHAM","Matt","Shooters and Fishers",7
+"NT"," E","1","RIGHTON","Christopher James","Shooters and Fishers",8
+"NT"," E","1","PILE","Jan","Rise Up Australia Party",23
+"NT"," E","1","COX","Michael","Rise Up Australia Party",24
+"NT"," E","1","WILLIAMS","Warren H","Australian Greens",21
+"NT"," E","1","BRAND","Michael","Australian Greens",22
+"NT"," E","1","WALCOTT","Phil","Australian Independents",13
+"NT"," E","1","FUTCHER","Lisa","Australian Independents",14
+"NT"," F","1","TE WAKE","Douglas","Palmer United Party",11
+"NT"," F","1","McCABE","John Brian Douglas","Palmer United Party",12
+"NT"," F","1","BELL","Gary","Uniting Australia Party",13
+"NT"," F","1","WATT","Kathryn","Uniting Australia Party",14
+"NT"," F","1","MILES","Jim","Stable Population Party",15
+"NT"," F","1","RUSSELL","Mark","Stable Population Party",16
+"NT"," F","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",7
+"NT"," F","1","GADAMBUA","Jeannie","A.F.N.P.P.",8
+"NT"," F","1","SCULLION","Nigel","Country Liberals (NT)",19
+"NT"," F","1","FAZLDEEN","Linda","Country Liberals (NT)",20
+"NT"," F","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",1
+"NT"," F","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",2
+"NT"," F","1","EDWARDS","Joanne Louise","Sex Party",5
+"NT"," F","1","RANDALL","Tracey Lee","Sex Party",6
+"NT"," F","1","WORK","Vernon","Citizens Electoral Council",21
+"NT"," F","1","STANKOVIC","Mile","Citizens Electoral Council",22
+"NT"," F","1","GRAHAM","Matt","Shooters and Fishers",17
+"NT"," F","1","RIGHTON","Christopher James","Shooters and Fishers",18
+"NT"," F","1","PILE","Jan","Rise Up Australia Party",23
+"NT"," F","1","COX","Michael","Rise Up Australia Party",24
+"NT"," F","1","WILLIAMS","Warren H","Australian Greens",3
+"NT"," F","1","BRAND","Michael","Australian Greens",4
+"NT"," F","1","WALCOTT","Phil","Australian Independents",9
+"NT"," F","1","FUTCHER","Lisa","Australian Independents",10
+"NT"," G","1","TE WAKE","Douglas","Palmer United Party",19
+"NT"," G","1","McCABE","John Brian Douglas","Palmer United Party",20
+"NT"," G","1","BELL","Gary","Uniting Australia Party",17
+"NT"," G","1","WATT","Kathryn","Uniting Australia Party",18
+"NT"," G","1","MILES","Jim","Stable Population Party",7
+"NT"," G","1","RUSSELL","Mark","Stable Population Party",8
+"NT"," G","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",5
+"NT"," G","1","GADAMBUA","Jeannie","A.F.N.P.P.",6
+"NT"," G","1","SCULLION","Nigel","Country Liberals (NT)",15
+"NT"," G","1","FAZLDEEN","Linda","Country Liberals (NT)",16
+"NT"," G","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",12
+"NT"," G","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",11
+"NT"," G","1","EDWARDS","Joanne Louise","Sex Party",1
+"NT"," G","1","RANDALL","Tracey Lee","Sex Party",2
+"NT"," G","1","WORK","Vernon","Citizens Electoral Council",22
+"NT"," G","1","STANKOVIC","Mile","Citizens Electoral Council",21
+"NT"," G","1","GRAHAM","Matt","Shooters and Fishers",3
+"NT"," G","1","RIGHTON","Christopher James","Shooters and Fishers",4
+"NT"," G","1","PILE","Jan","Rise Up Australia Party",23
+"NT"," G","1","COX","Michael","Rise Up Australia Party",24
+"NT"," G","1","WILLIAMS","Warren H","Australian Greens",13
+"NT"," G","1","BRAND","Michael","Australian Greens",14
+"NT"," G","1","WALCOTT","Phil","Australian Independents",9
+"NT"," G","1","FUTCHER","Lisa","Australian Independents",10
+"NT"," H","1","TE WAKE","Douglas","Palmer United Party",15
+"NT"," H","2","TE WAKE","Douglas","Palmer United Party",13
+"NT"," H","1","McCABE","John Brian Douglas","Palmer United Party",16
+"NT"," H","2","McCABE","John Brian Douglas","Palmer United Party",14
+"NT"," H","1","BELL","Gary","Uniting Australia Party",7
+"NT"," H","2","BELL","Gary","Uniting Australia Party",7
+"NT"," H","1","WATT","Kathryn","Uniting Australia Party",8
+"NT"," H","2","WATT","Kathryn","Uniting Australia Party",8
+"NT"," H","1","MILES","Jim","Stable Population Party",19
+"NT"," H","2","MILES","Jim","Stable Population Party",19
+"NT"," H","1","RUSSELL","Mark","Stable Population Party",20
+"NT"," H","2","RUSSELL","Mark","Stable Population Party",20
+"NT"," H","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",3
+"NT"," H","2","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",3
+"NT"," H","1","GADAMBUA","Jeannie","A.F.N.P.P.",4
+"NT"," H","2","GADAMBUA","Jeannie","A.F.N.P.P.",4
+"NT"," H","1","SCULLION","Nigel","Country Liberals (NT)",17
+"NT"," H","2","SCULLION","Nigel","Country Liberals (NT)",15
+"NT"," H","1","FAZLDEEN","Linda","Country Liberals (NT)",18
+"NT"," H","2","FAZLDEEN","Linda","Country Liberals (NT)",16
+"NT"," H","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",13
+"NT"," H","2","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",17
+"NT"," H","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",14
+"NT"," H","2","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",18
+"NT"," H","1","EDWARDS","Joanne Louise","Sex Party",21
+"NT"," H","2","EDWARDS","Joanne Louise","Sex Party",21
+"NT"," H","1","RANDALL","Tracey Lee","Sex Party",22
+"NT"," H","2","RANDALL","Tracey Lee","Sex Party",22
+"NT"," H","1","WORK","Vernon","Citizens Electoral Council",1
+"NT"," H","2","WORK","Vernon","Citizens Electoral Council",1
+"NT"," H","1","STANKOVIC","Mile","Citizens Electoral Council",2
+"NT"," H","2","STANKOVIC","Mile","Citizens Electoral Council",2
+"NT"," H","1","GRAHAM","Matt","Shooters and Fishers",9
+"NT"," H","2","GRAHAM","Matt","Shooters and Fishers",9
+"NT"," H","1","RIGHTON","Christopher James","Shooters and Fishers",10
+"NT"," H","2","RIGHTON","Christopher James","Shooters and Fishers",10
+"NT"," H","1","PILE","Jan","Rise Up Australia Party",11
+"NT"," H","2","PILE","Jan","Rise Up Australia Party",11
+"NT"," H","1","COX","Michael","Rise Up Australia Party",12
+"NT"," H","2","COX","Michael","Rise Up Australia Party",12
+"NT"," H","1","WILLIAMS","Warren H","Australian Greens",23
+"NT"," H","2","WILLIAMS","Warren H","Australian Greens",23
+"NT"," H","1","BRAND","Michael","Australian Greens",24
+"NT"," H","2","BRAND","Michael","Australian Greens",24
+"NT"," H","1","WALCOTT","Phil","Australian Independents",5
+"NT"," H","2","WALCOTT","Phil","Australian Independents",5
+"NT"," H","1","FUTCHER","Lisa","Australian Independents",6
+"NT"," H","2","FUTCHER","Lisa","Australian Independents",6
+"NT"," I","1","TE WAKE","Douglas","Palmer United Party",17
+"NT"," I","1","McCABE","John Brian Douglas","Palmer United Party",18
+"NT"," I","1","BELL","Gary","Uniting Australia Party",11
+"NT"," I","1","WATT","Kathryn","Uniting Australia Party",12
+"NT"," I","1","MILES","Jim","Stable Population Party",9
+"NT"," I","1","RUSSELL","Mark","Stable Population Party",10
+"NT"," I","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",7
+"NT"," I","1","GADAMBUA","Jeannie","A.F.N.P.P.",8
+"NT"," I","1","SCULLION","Nigel","Country Liberals (NT)",19
+"NT"," I","1","FAZLDEEN","Linda","Country Liberals (NT)",20
+"NT"," I","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",21
+"NT"," I","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",22
+"NT"," I","1","EDWARDS","Joanne Louise","Sex Party",3
+"NT"," I","1","RANDALL","Tracey Lee","Sex Party",4
+"NT"," I","1","WORK","Vernon","Citizens Electoral Council",15
+"NT"," I","1","STANKOVIC","Mile","Citizens Electoral Council",16
+"NT"," I","1","GRAHAM","Matt","Shooters and Fishers",1
+"NT"," I","1","RIGHTON","Christopher James","Shooters and Fishers",2
+"NT"," I","1","PILE","Jan","Rise Up Australia Party",13
+"NT"," I","1","COX","Michael","Rise Up Australia Party",14
+"NT"," I","1","WILLIAMS","Warren H","Australian Greens",24
+"NT"," I","1","BRAND","Michael","Australian Greens",23
+"NT"," I","1","WALCOTT","Phil","Australian Independents",5
+"NT"," I","1","FUTCHER","Lisa","Australian Independents",6
+"NT"," J","1","TE WAKE","Douglas","Palmer United Party",11
+"NT"," J","1","McCABE","John Brian Douglas","Palmer United Party",12
+"NT"," J","1","BELL","Gary","Uniting Australia Party",3
+"NT"," J","1","WATT","Kathryn","Uniting Australia Party",4
+"NT"," J","1","MILES","Jim","Stable Population Party",17
+"NT"," J","1","RUSSELL","Mark","Stable Population Party",18
+"NT"," J","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",7
+"NT"," J","1","GADAMBUA","Jeannie","A.F.N.P.P.",8
+"NT"," J","1","SCULLION","Nigel","Country Liberals (NT)",13
+"NT"," J","1","FAZLDEEN","Linda","Country Liberals (NT)",14
+"NT"," J","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",19
+"NT"," J","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",20
+"NT"," J","1","EDWARDS","Joanne Louise","Sex Party",21
+"NT"," J","1","RANDALL","Tracey Lee","Sex Party",22
+"NT"," J","1","WORK","Vernon","Citizens Electoral Council",15
+"NT"," J","1","STANKOVIC","Mile","Citizens Electoral Council",16
+"NT"," J","1","GRAHAM","Matt","Shooters and Fishers",9
+"NT"," J","1","RIGHTON","Christopher James","Shooters and Fishers",10
+"NT"," J","1","PILE","Jan","Rise Up Australia Party",1
+"NT"," J","1","COX","Michael","Rise Up Australia Party",2
+"NT"," J","1","WILLIAMS","Warren H","Australian Greens",23
+"NT"," J","1","BRAND","Michael","Australian Greens",24
+"NT"," J","1","WALCOTT","Phil","Australian Independents",5
+"NT"," J","1","FUTCHER","Lisa","Australian Independents",6
+"NT"," K","1","TE WAKE","Douglas","Palmer United Party",13
+"NT"," K","1","McCABE","John Brian Douglas","Palmer United Party",14
+"NT"," K","1","BELL","Gary","Uniting Australia Party",15
+"NT"," K","1","WATT","Kathryn","Uniting Australia Party",16
+"NT"," K","1","MILES","Jim","Stable Population Party",7
+"NT"," K","1","RUSSELL","Mark","Stable Population Party",8
+"NT"," K","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",3
+"NT"," K","1","GADAMBUA","Jeannie","A.F.N.P.P.",4
+"NT"," K","1","SCULLION","Nigel","Country Liberals (NT)",21
+"NT"," K","1","FAZLDEEN","Linda","Country Liberals (NT)",22
+"NT"," K","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",11
+"NT"," K","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",12
+"NT"," K","1","EDWARDS","Joanne Louise","Sex Party",9
+"NT"," K","1","RANDALL","Tracey Lee","Sex Party",10
+"NT"," K","1","WORK","Vernon","Citizens Electoral Council",23
+"NT"," K","1","STANKOVIC","Mile","Citizens Electoral Council",24
+"NT"," K","1","GRAHAM","Matt","Shooters and Fishers",19
+"NT"," K","1","RIGHTON","Christopher James","Shooters and Fishers",20
+"NT"," K","1","PILE","Jan","Rise Up Australia Party",17
+"NT"," K","1","COX","Michael","Rise Up Australia Party",18
+"NT"," K","1","WILLIAMS","Warren H","Australian Greens",1
+"NT"," K","1","BRAND","Michael","Australian Greens",2
+"NT"," K","1","WALCOTT","Phil","Australian Independents",5
+"NT"," K","1","FUTCHER","Lisa","Australian Independents",6
+"NT"," L","1","TE WAKE","Douglas","Palmer United Party",17
+"NT"," L","1","McCABE","John Brian Douglas","Palmer United Party",18
+"NT"," L","1","BELL","Gary","Uniting Australia Party",13
+"NT"," L","1","WATT","Kathryn","Uniting Australia Party",14
+"NT"," L","1","MILES","Jim","Stable Population Party",5
+"NT"," L","1","RUSSELL","Mark","Stable Population Party",6
+"NT"," L","1","KUNOTH-MONKS","Rosalie","A.F.N.P.P.",11
+"NT"," L","1","GADAMBUA","Jeannie","A.F.N.P.P.",12
+"NT"," L","1","SCULLION","Nigel","Country Liberals (NT)",21
+"NT"," L","1","FAZLDEEN","Linda","Country Liberals (NT)",22
+"NT"," L","1","PERIS","Nova","Australian Labor Party (Northern Territory) Branch",24
+"NT"," L","1","FOLEY","Rowan","Australian Labor Party (Northern Territory) Branch",23
+"NT"," L","1","EDWARDS","Joanne Louise","Sex Party",3
+"NT"," L","1","RANDALL","Tracey Lee","Sex Party",4
+"NT"," L","1","WORK","Vernon","Citizens Electoral Council",19
+"NT"," L","1","STANKOVIC","Mile","Citizens Electoral Council",20
+"NT"," L","1","GRAHAM","Matt","Shooters and Fishers",7
+"NT"," L","1","RIGHTON","Christopher James","Shooters and Fishers",8
+"NT"," L","1","PILE","Jan","Rise Up Australia Party",9
+"NT"," L","1","COX","Michael","Rise Up Australia Party",10
+"NT"," L","1","WILLIAMS","Warren H","Australian Greens",15
+"NT"," L","1","BRAND","Michael","Australian Greens",16
+"NT"," L","1","WALCOTT","Phil","Australian Independents",1
+"NT"," L","1","FUTCHER","Lisa","Australian Independents",2
