@@ -45,7 +45,7 @@ text { font: 12px sans-serif; }
 
 <div id="container" class="container-fluid">
 
-<div id="viz" class="span10"></div>
+<div id="viz" class="span10 pull-left"></div>
 
 <button class="btn btn-primary" value="act">ACT</button>
 <button class="btn" value="nsw">NSW</button>
@@ -55,6 +55,8 @@ text { font: 12px sans-serif; }
 <button class="btn" value="tas">TAS</button>
 <button class="btn" value="vic">Victoria</button>
 <button class="btn" value="wa">WA</button>
+
+
 
 
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -73,8 +75,10 @@ var colour = d3.scale.category20();
 
 var chordLabel = d3.scale.quantile()
 					      .domain([0,1])
-						  .range(["lower preference", "higher preference"]);
+						  .range(["do not preference highly", "preference highly the"]);
 
+
+// function chordLabel(d){ return d; }
 var arc = d3.svg.arc()
     .innerRadius(innerRadius)
     .outerRadius(outerRadius);
@@ -140,16 +144,27 @@ function drawChart(state){
 						.domain([d3.min(matrix_1d), d3.max(matrix_1d)])
 						.range([1,0,0,0]);
 		
+		// we need to transform the matrix so that the rows are
+		// columns ie. our value will be the preferences received rather
+		// than the preferences given - this makes more sense visually (trust me)
+		
+		var rev_matrix = matrix[0].map(function(col, i) {
+			return matrix.map(function(row) {
+				return row[i];
+			});
+		});
+		
+		
 		// now scale our matrix
-		for(var i = 0; i < matrix.length; i++){
-			for(var x =0; x < matrix[i].length; x++){
-				matrix[i][x] = scalePref(matrix[i][x]);
+		for(var i = 0; i < rev_matrix.length; i++){
+			for(var x =0; x < rev_matrix[i].length; x++){
+				rev_matrix[i][x] = scalePref(rev_matrix[i][x]);
 			}
 		}
 		
 	  
 		// Compute the chord layout.
-		layout.matrix(matrix);
+		layout.matrix(rev_matrix);
 
 		// Add a group per neighborhood.
 		var group = svg.selectAll(".group")
@@ -200,12 +215,13 @@ function drawChart(state){
 
 		// Add an elaborate mouseover title for each chord.
 		chord.append("title").text(function(d) {
-		  return tickets[d.source.index].name
-			  + " → " + tickets[d.target.index].name
-			  + ": " + chordLabel(d.source.value)
-			  + "\n" + tickets[d.target.index].name
-			  + " → " + tickets[d.source.index].name
-			  + ": " + chordLabel(d.target.value);
+		  return tickets[d.target.index].name
+			  + " " + chordLabel(d.source.value) + " "
+			  + tickets[d.source.index].name
+			  + "\n"
+			  + tickets[d.source.index].name
+			  + " " + chordLabel(d.target.value) + " " 
+			  + tickets[d.target.index].name;
 		});
 
 		function mouseover(d, i) {
@@ -238,13 +254,29 @@ jQuery( document ).ready(function() {
 </script>
 
 
+
+
 		<div class="navbar navbar-fixed-bottom" id="footer">
+		
+		<div class="pull-right span5"><p>This visualisation works by first grouping preference into group tickets. 
+It does this for parties and also for independent groups.</p>
+<p>
+It then works out the aveage position each ticket gives to candidates on each other ticket. 
+If the average is in the top 25% of the preferences the we class this as being preferenced highly. If the party is preferenced highly they will have a 
+thicker line pointing to them on the chart.
+</p>
+<p>
+While this gives us a quick overview, in reality it's a lot more complex and the preference order is particularly important.</p>
+<p>For more detail see <a href="http://www.belowtheline.org.au/">belowtheline.org.au</a>
+</p>
+<p>&nbsp;</p>
+
 			<p class="muted credit pull-right">Visualisation using <a href="http://d3js.org">d3js</a> by <a href="http://twitter.com/peterneish">@peterneish</a>,
 			data from the <a href="http://www.aec.gov.au">Australian Electoral Commission</a>, code on <a href="https://github.com/peterneish/preferences">GitHub</a>.
 			</p>
 			
 		</div>
-
+</div>
 
 </div> <!-- container -->
 
