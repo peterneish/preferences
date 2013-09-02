@@ -12,10 +12,7 @@
   fill-opacity: .5;
 }
 
-path.chord {
-  stroke: #000;
-  stroke-width: .25px;
-}
+
 
 #circle:hover path.fade {
   display: none;
@@ -23,17 +20,21 @@ path.chord {
 
 </style>
 <body>
-<script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script>
 
 var width = 720,
     height = 720,
     outerRadius = Math.min(width, height) / 2 - 10,
-    innerRadius = outerRadius - 24;
 
+    innerRadius = outerRadius - 24;
 var formatPercent = d3.format("g");
 
-var colour = d3.scale.category20c();
+var colour = d3.scale.category20();
+
+var chordLabel = d3.scale.quantile()
+					      .domain([0,1])
+						  .range(["lower preference", "higher preference"]);
 
 var arc = d3.svg.arc()
     .innerRadius(innerRadius)
@@ -60,6 +61,31 @@ svg.append("circle")
 d3.csv("data/processed_data/vic-gvt_processed.csv", function(cities) {
   d3.json("data/processed_data/vic-gvt_processed.json", function(matrix) {
 
+    // We first need to scale the data.
+	// We want a low average preference to be a large value,
+	// so we need to invert and then scale the results
+	
+
+	
+	
+	// first convert the 2d matrix into a single array
+	var matrix_1d = [];
+	for(var i = 0; i < matrix.length; i++){
+		matrix_1d = matrix_1d.concat(matrix[i]);
+	}
+	
+	var scalePref = d3.scale.quantile()
+	                .domain([d3.min(matrix_1d), d3.max(matrix_1d)])
+					.range([1,0,0,0]);
+	
+	// now scale our matrix
+	for(var i = 0; i < matrix.length; i++){
+	    for(var x =0; x < matrix[i].length; x++){
+			matrix[i][x] = scalePref(matrix[i][x]);
+		}
+	}
+	
+  
     // Compute the chord layout.
     layout.matrix(matrix);
 
@@ -72,14 +98,14 @@ d3.csv("data/processed_data/vic-gvt_processed.csv", function(cities) {
 
     // Add a mouseover title.
     group.append("title").text(function(d, i) {
-      return cities[i].name + ": " + formatPercent(d.value) + " average preference";
+      return cities[i].name;
     });
 
     // Add the group arc.
     var groupPath = group.append("path")
         .attr("id", function(d, i) { return "group" + i; })
         .attr("d", arc)
-        .style("fill", function(d, i) { return cities[i].color; });
+        .style("fill", function(d, i) { return colour(cities[i].name); });
 
     // Add a text label.
     var groupText = group.append("text")
@@ -99,17 +125,17 @@ d3.csv("data/processed_data/vic-gvt_processed.csv", function(cities) {
         .data(layout.chords)
       .enter().append("path")
         .attr("class", "chord")
-        .style("fill", function(d) { return cities[d.source.index].color; })
+        .style("fill", function(d) { return colour(cities[d.source.index].name); })
         .attr("d", path);
 
     // Add an elaborate mouseover title for each chord.
     chord.append("title").text(function(d) {
       return cities[d.source.index].name
           + " → " + cities[d.target.index].name
-          + ": " + formatPercent(d.source.value)
+          + ": " + chordLabel(d.source.value)
           + "\n" + cities[d.target.index].name
           + " → " + cities[d.source.index].name
-          + ": " + formatPercent(d.target.value);
+          + ": " + chordLabel(d.target.value);
     });
 
     function mouseover(d, i) {
