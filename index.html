@@ -61,22 +61,34 @@ svg.append("circle")
 	
 	
 function drawChart(state){
+
+d3.select("svg").remove();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("id", "circle")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+svg.append("circle")
+    .attr("r", outerRadius);
+
+	// clear existing data
+	
     // get the right file
 	
 	var base = "data/processed_data/";
 	var csv_file = base + state + "-gvt_processed.csv";
 	var json_file = base + state + "-gvt_processed.json";
 	
-	d3.csv(csv_file, function(cities) {
+	d3.csv(csv_file, function(tickets) {
 	  d3.json(json_file, function(matrix) {
 
 		// We first need to scale the data.
 		// We want a low average preference to be a large value,
 		// so we need to invert and then scale the results
-		
-
-		
-		
+	
 		// first convert the 2d matrix into a single array
 		var matrix_1d = [];
 		for(var i = 0; i < matrix.length; i++){
@@ -107,14 +119,14 @@ function drawChart(state){
 
 		// Add a mouseover title.
 		group.append("title").text(function(d, i) {
-		  return cities[i].name;
+		  return tickets[i].name;
 		});
 
 		// Add the group arc.
 		var groupPath = group.append("path")
 			.attr("id", function(d, i) { return "group" + i; })
 			.attr("d", arc)
-			.style("fill", function(d, i) { return colour(cities[i].name); });
+			.style("fill", function(d, i) { return colour(tickets[i].name); });
 
 		// Add a text label.
 		var groupText = group.append("text")
@@ -123,7 +135,7 @@ function drawChart(state){
 
 		groupText.append("textPath")
 			.attr("xlink:href", function(d, i) { return "#group" + i; })
-			.text(function(d, i) { return cities[i].name; });
+			.text(function(d, i) { return tickets[i].name; });
 
 		// Remove the labels that don't fit. :(
 		groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
@@ -134,16 +146,16 @@ function drawChart(state){
 			.data(layout.chords)
 		  .enter().append("path")
 			.attr("class", "chord")
-			.style("fill", function(d) { return colour(cities[d.source.index].name); })
+			.style("fill", function(d) { return colour(tickets[d.source.index].name); })
 			.attr("d", path);
 
 		// Add an elaborate mouseover title for each chord.
 		chord.append("title").text(function(d) {
-		  return cities[d.source.index].name
-			  + " → " + cities[d.target.index].name
+		  return tickets[d.source.index].name
+			  + " → " + tickets[d.target.index].name
 			  + ": " + chordLabel(d.source.value)
-			  + "\n" + cities[d.target.index].name
-			  + " → " + cities[d.source.index].name
+			  + "\n" + tickets[d.target.index].name
+			  + " → " + tickets[d.source.index].name
 			  + ": " + chordLabel(d.target.value);
 		});
 
@@ -163,6 +175,7 @@ function drawChart(state){
 </script>
 
 <button value="vic" onclick="drawChart(this.value);">Victoria</button><button value="nsw" onclick="drawChart(this.value);">NSW</button>
+<button value="act" onclick="drawChart(this.value);">ACT</button>
 
 <p>Senate Preferences in Australian Senate Election 2013</p>
 

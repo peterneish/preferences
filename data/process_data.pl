@@ -135,11 +135,16 @@ foreach $file (@files){
 
 
 		}
-		print MATRIX "[";
-		print MATRIX join ",", @averages;
-		print MATRIX "],";
+		my $line = "[";
+		$line = $line . join ",", @averages;
+		$line = $line . "]";
+
+
+		push @lines, $line;
 	}
 
+
+	print MATRIX join ",", @lines;
 	print MATRIX "]";
 
 	close MATRIX;
