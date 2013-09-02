@@ -12,6 +12,11 @@
   fill-opacity: .5;
 }
 
+#blurb, #buttons, #viz { margin: 25px 0; }
+#blurb { margin-bottom: 50px; }
+
+#footer { background-color: #ccc; }
+
 #circle:hover path.fade {
   display: none;
 }
@@ -34,19 +39,13 @@ text { font: 12px sans-serif; }
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="#">Senate Preferences in Australian Senate Election 2013</a>
-          <div class="nav-collapse collapse">
-             
-
-          </div><!--/.nav-collapse -->
-
         </div>
       </div>
     </div>
 
 <div id="container" class="container-fluid">
 
-<div id="viz" class="span10 pull-left"></div>
-
+<div id="buttons">
 <button class="btn btn-primary" value="act">ACT</button>
 <button class="btn" value="nsw">NSW</button>
 <button class="btn" value="nt">NT</button>
@@ -55,7 +54,36 @@ text { font: 12px sans-serif; }
 <button class="btn" value="tas">TAS</button>
 <button class="btn" value="vic">Victoria</button>
 <button class="btn" value="wa">WA</button>
+</div>
 
+<div id="viz">
+</div>
+
+
+<div class="blurb" class="span12"><p>This visualisation works by first grouping preference into group tickets. 
+It does this for parties and also for independent groups.</p>
+<p>
+It then works out the aveage position each ticket gives to candidates on each other ticket. 
+If the average is in the top 25% of the preferences the we class this as being preferenced highly. If the party is preferenced highly they will have a 
+thicker line pointing to them on the chart.
+</p>
+<p>
+While this gives us a quick overview, in reality it's a lot more complex and the preference order is particularly important.</p>
+<p>For a full list of all preferences I recommend <a href="http://www.belowtheline.org.au/">belowtheline.org.au</a>. Also have a look at <a href="https://www.openaustraliafoundation.org.au/2013/08/26/an-experiment-in-visualising-preferences/">this visualisation by Open Australia</a>.
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="clear:both;"></div>
+</div>
+
+<div class="navbar navbar-fixed-bottom" id="footer">
+		
+			<p class="muted credit pull-right">Visualisation using <a href="http://d3js.org">d3js</a> by <a href="http://twitter.com/peterneish">@peterneish</a>,
+			data from the <a href="http://www.aec.gov.au">Australian Electoral Commission</a>, code on <a href="https://github.com/peterneish/preferences">GitHub</a>.
+			</p>
+			
+		</div>
+</div>
 
 
 
@@ -64,9 +92,18 @@ text { font: 12px sans-serif; }
 
 <script>
 
-var width = 920,
-    height = 720,
-    outerRadius = Math.min(width, height) / 2 - 70,
+// calculate window size
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementById("viz"),
+    x = g.clientWidth || w.innerWidth || e.clientWidth,
+    y = w.innerHeight|| e.clientHeight || g.clientHeight;
+
+var width = Math.max( x * 0.95, 900 ),  //width
+    height = Math.max( y * 0.95, 720 ); //height
+
+var outerRadius = Math.min(width, height) / 2 - 70,
 
     innerRadius = outerRadius - 24;
 var formatPercent = d3.format("g");
@@ -74,8 +111,8 @@ var formatPercent = d3.format("g");
 var colour = d3.scale.category20();
 
 var chordLabel = d3.scale.quantile()
-					      .domain([0,1])
-						  .range(["do not preference highly", "preference highly the"]);
+	      .domain([0,1])
+  	  .range(["do not preference highly", "preference highly the"]);
 
 
 // function chordLabel(d){ return d; }
@@ -109,7 +146,7 @@ function drawChart(state){
 	// clear existing data
 	d3.select("svg").remove();
 
-	var svg = d3.select("body").append("svg")
+	var svg = d3.select("#viz").append("svg")
 		.attr("width", width)
 		.attr("height", height)
 	  .append("g")
@@ -226,9 +263,14 @@ function drawChart(state){
 
 		function mouseover(d, i) {
 		  chord.classed("fade", function(p) {
+
 			return p.source.index != i
 				&& p.target.index != i;
 		  });
+
+		  chord.filter( function(d) { return d.source.index == i || d.target.index == i; })
+		       .style("fill", function(d) { return colour(tickets[i].name); });
+		  
 		}
 	  });
 	});
@@ -254,30 +296,6 @@ jQuery( document ).ready(function() {
 </script>
 
 
-
-
-		<div class="navbar navbar-fixed-bottom" id="footer">
-		
-		<div class="pull-right span5"><p>This visualisation works by first grouping preference into group tickets. 
-It does this for parties and also for independent groups.</p>
-<p>
-It then works out the aveage position each ticket gives to candidates on each other ticket. 
-If the average is in the top 25% of the preferences the we class this as being preferenced highly. If the party is preferenced highly they will have a 
-thicker line pointing to them on the chart.
-</p>
-<p>
-While this gives us a quick overview, in reality it's a lot more complex and the preference order is particularly important.</p>
-<p>For a full list of all preferences I recommend <a href="http://www.belowtheline.org.au/">belowtheline.org.au</a>. Have a look too at <a href="https://www.openaustraliafoundation.org.au/2013/08/26/an-experiment-in-visualising-preferences/">this visualisation by
-Open Australia</a>.
-</p>
-<p>&nbsp;</p>
-
-			<p class="muted credit pull-right">Visualisation using <a href="http://d3js.org">d3js</a> by <a href="http://twitter.com/peterneish">@peterneish</a>,
-			data from the <a href="http://www.aec.gov.au">Australian Electoral Commission</a>, code on <a href="https://github.com/peterneish/preferences">GitHub</a>.
-			</p>
-			
-		</div>
-</div>
 
 </div> <!-- container -->
 
