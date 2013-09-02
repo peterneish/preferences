@@ -12,16 +12,35 @@
   fill-opacity: .5;
 }
 
-
 #circle:hover path.fade {
   display: none;
 }
 
- <link href="bootstrap.css" rel="stylesheet">
+
 
 </style>
+
+<link href="bootstrap.css" rel="stylesheet">
+ 
 <body>
+
+<h1 id="headline">Senate Preferences in Australian Senate Election 2013</h1>
+
+
+
+<button class="btn btn-primary" value="act">ACT</button>
+<button class="btn" value="nsw">NSW</button>
+<button class="btn" value="nt">NT</button>
+<button class="btn" value="qld">QLD</button>
+<button class="btn" value="sa">SA</button>
+<button class="btn" value="tas">TAS</button>
+<button class="btn" value="vic">Victoria</button>
+<button class="btn" value="wa">WA</button>
+
+
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <script>
 
 var width = 720,
@@ -62,19 +81,22 @@ svg.append("circle")
 	
 function drawChart(state){
 
-d3.select("svg").remove();
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-  .append("g")
-    .attr("id", "circle")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-svg.append("circle")
-    .attr("r", outerRadius);
 
 	// clear existing data
+	d3.select("svg").remove();
+
+	var svg = d3.select("body").append("svg")
+		.attr("width", width)
+		.attr("height", height)
+	  .append("g")
+		.attr("id", "circle")
+		.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+	svg.append("circle")
+		.attr("r", outerRadius);
+
+
 	
     // get the right file
 	
@@ -167,17 +189,28 @@ svg.append("circle")
 		}
 	  });
 	});
+	
+
+	
+	
 } // end drawChart
 
-drawChart("vic");
 
+jQuery( document ).ready(function() {
+	$('button').click(function(){
+		drawChart($(this).val());
+		$("button").removeClass("btn-primary");
+		$(this).addClass("btn-primary");
+	});
+	
+	
+	drawChart("act");
+
+});
 
 </script>
 
-<button value="vic" onclick="drawChart(this.value);">Victoria</button><button value="nsw" onclick="drawChart(this.value);">NSW</button>
-<button value="act" onclick="drawChart(this.value);">ACT</button>
 
-<p>Senate Preferences in Australian Senate Election 2013</p>
 
 </body>
 
