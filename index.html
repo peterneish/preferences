@@ -16,6 +16,12 @@
   display: none;
 }
 
+body {
+padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+text { font: 12px sans-serif; }
+#footer { margin-right:10px; }
+
 
 
 </style>
@@ -24,9 +30,22 @@
  
 <body>
 
-<h1 id="headline">Senate Preferences in Australian Senate Election 2013</h1>
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Senate Preferences in Australian Senate Election 2013</a>
+          <div class="nav-collapse collapse">
+             
 
+          </div><!--/.nav-collapse -->
 
+        </div>
+      </div>
+    </div>
+
+<div id="container" class="container-fluid">
+
+<div id="viz" class="span10"></div>
 
 <button class="btn btn-primary" value="act">ACT</button>
 <button class="btn" value="nsw">NSW</button>
@@ -43,9 +62,9 @@
 
 <script>
 
-var width = 720,
+var width = 920,
     height = 720,
-    outerRadius = Math.min(width, height) / 2 - 10,
+    outerRadius = Math.min(width, height) / 2 - 70,
 
     innerRadius = outerRadius - 24;
 var formatPercent = d3.format("g");
@@ -68,7 +87,7 @@ var layout = d3.layout.chord()
 var path = d3.svg.chord()
     .radius(innerRadius);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#viz").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
@@ -152,16 +171,24 @@ function drawChart(state){
 
 		// Add a text label.
 		var groupText = group.append("text")
+		    .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
 			.attr("x", 6)
-			.attr("dy", 15);
+			.attr("dy", ".35em")
+			.attr("transform", function(d) {
+        return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+            + "translate(" + (innerRadius + 26) + ")"
+            + (d.angle > Math.PI ? " " : "");
+      })
+				.text(function(d,i) { return tickets[i].name; });
+			
 
-		groupText.append("textPath")
-			.attr("xlink:href", function(d, i) { return "#group" + i; })
-			.text(function(d, i) { return tickets[i].name; });
+		//groupText.append("textPath")
+			//.attr("xlink:href", function(d, i) { return "#group" + i; })
+			//.text(function(d, i) { return tickets[i].name; });
 
 		// Remove the labels that don't fit. :(
-		groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
-			.remove();
+		//groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
+		//	.remove();
 
 		// Add the chords.
 		var chord = svg.selectAll(".chord")
@@ -211,6 +238,15 @@ jQuery( document ).ready(function() {
 </script>
 
 
+		<div class="navbar navbar-fixed-bottom" id="footer">
+			<p class="muted credit pull-right">Visualisation using <a href="http://d3js.org">d3js</a> by <a href="http://twitter.com/peterneish">@peterneish</a>,
+			data from the <a href="http://www.aec.gov.au">Australian Electoral Commission</a>, code on <a href="https://github.com/peterneish/preferences">GitHub</a>.
+			</p>
+			
+		</div>
+
+
+</div> <!-- container -->
 
 </body>
 
