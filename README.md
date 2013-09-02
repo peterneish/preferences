@@ -1,3 +1,3 @@
 Australian Election Preferences Visualisation.
 
-First cut - lots still to do.
+See it in action at http: http://peterneish.github.io/preferences/
