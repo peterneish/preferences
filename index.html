@@ -252,13 +252,35 @@ function drawChart(state){
 
 		// Add an elaborate mouseover title for each chord.
 		chord.append("title").text(function(d) {
-		  return tickets[d.target.index].name
-			  + " " + chordLabel(d.source.value) + " "
-			  + tickets[d.source.index].name
-			  + "\n"
-			  + tickets[d.source.index].name
-			  + " " + chordLabel(d.target.value) + " " 
-			  + tickets[d.target.index].name;
+
+		  ret = "";
+		  source_name = tickets[d.source.index].name;
+		  target_name = tickets[d.target.index].name;
+
+		  if(d.source.value && d.target.value){
+			if(source_name == target_name){
+				ret = source_name + " preferences itself highly";
+			}
+			else{
+				ret = source_name + " and " + 
+			              target_name + " preference each other highly";
+			}
+		  }
+		  else if(!d.source.value && !d.source.value){
+			ret = "Neither " + source_name + " or " + 
+			      target_name + " preference each other highly";
+		  }
+		  else if(!d.source.value){
+			ret =  source_name + " preferences " + 
+			      target_name + " highly, but not the other way around";
+		  }
+		  else if(!d.target.value){
+			ret =  target_name + " preferences " + 
+			      source_name + " highly, but not the other way around";
+		  }
+			
+		  return ret;
+
 		});
 
 		function mouseover(d, i) {
