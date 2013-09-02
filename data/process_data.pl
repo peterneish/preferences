@@ -116,7 +116,9 @@ foreach $file (@files){
 	open MATRIX, ">$matrix_file" or die $!;
 	open CSV_PROC, ">$csv_file" or die $!;
 
+	# print some header stuff
 	print MATRIX "[";
+	print CSV_PROC "name\n";
 
 	my @lines;
 

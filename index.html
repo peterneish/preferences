@@ -13,10 +13,11 @@
 }
 
 
-
 #circle:hover path.fade {
   display: none;
 }
+
+ <link href="bootstrap.css" rel="stylesheet">
 
 </style>
 <body>
@@ -57,100 +58,115 @@ var svg = d3.select("body").append("svg")
 
 svg.append("circle")
     .attr("r", outerRadius);
+	
+	
+function drawChart(state){
+    // get the right file
+	
+	var base = "data/processed_data/";
+	var csv_file = base + state + "-gvt_processed.csv";
+	var json_file = base + state + "-gvt_processed.json";
+	
+	d3.csv(csv_file, function(cities) {
+	  d3.json(json_file, function(matrix) {
 
-d3.csv("data/processed_data/vic-gvt_processed.csv", function(cities) {
-  d3.json("data/processed_data/vic-gvt_processed.json", function(matrix) {
+		// We first need to scale the data.
+		// We want a low average preference to be a large value,
+		// so we need to invert and then scale the results
+		
 
-    // We first need to scale the data.
-	// We want a low average preference to be a large value,
-	// so we need to invert and then scale the results
-	
-
-	
-	
-	// first convert the 2d matrix into a single array
-	var matrix_1d = [];
-	for(var i = 0; i < matrix.length; i++){
-		matrix_1d = matrix_1d.concat(matrix[i]);
-	}
-	
-	var scalePref = d3.scale.quantile()
-	                .domain([d3.min(matrix_1d), d3.max(matrix_1d)])
-					.range([1,0,0,0]);
-	
-	// now scale our matrix
-	for(var i = 0; i < matrix.length; i++){
-	    for(var x =0; x < matrix[i].length; x++){
-			matrix[i][x] = scalePref(matrix[i][x]);
+		
+		
+		// first convert the 2d matrix into a single array
+		var matrix_1d = [];
+		for(var i = 0; i < matrix.length; i++){
+			matrix_1d = matrix_1d.concat(matrix[i]);
 		}
-	}
-	
-  
-    // Compute the chord layout.
-    layout.matrix(matrix);
+		
+		var scalePref = d3.scale.quantile()
+						.domain([d3.min(matrix_1d), d3.max(matrix_1d)])
+						.range([1,0,0,0]);
+		
+		// now scale our matrix
+		for(var i = 0; i < matrix.length; i++){
+			for(var x =0; x < matrix[i].length; x++){
+				matrix[i][x] = scalePref(matrix[i][x]);
+			}
+		}
+		
+	  
+		// Compute the chord layout.
+		layout.matrix(matrix);
 
-    // Add a group per neighborhood.
-    var group = svg.selectAll(".group")
-        .data(layout.groups)
-      .enter().append("g")
-        .attr("class", "group")
-        .on("mouseover", mouseover);
+		// Add a group per neighborhood.
+		var group = svg.selectAll(".group")
+			.data(layout.groups)
+		  .enter().append("g")
+			.attr("class", "group")
+			.on("mouseover", mouseover);
 
-    // Add a mouseover title.
-    group.append("title").text(function(d, i) {
-      return cities[i].name;
-    });
+		// Add a mouseover title.
+		group.append("title").text(function(d, i) {
+		  return cities[i].name;
+		});
 
-    // Add the group arc.
-    var groupPath = group.append("path")
-        .attr("id", function(d, i) { return "group" + i; })
-        .attr("d", arc)
-        .style("fill", function(d, i) { return colour(cities[i].name); });
+		// Add the group arc.
+		var groupPath = group.append("path")
+			.attr("id", function(d, i) { return "group" + i; })
+			.attr("d", arc)
+			.style("fill", function(d, i) { return colour(cities[i].name); });
 
-    // Add a text label.
-    var groupText = group.append("text")
-        .attr("x", 6)
-        .attr("dy", 15);
+		// Add a text label.
+		var groupText = group.append("text")
+			.attr("x", 6)
+			.attr("dy", 15);
 
-    groupText.append("textPath")
-        .attr("xlink:href", function(d, i) { return "#group" + i; })
-        .text(function(d, i) { return cities[i].name; });
+		groupText.append("textPath")
+			.attr("xlink:href", function(d, i) { return "#group" + i; })
+			.text(function(d, i) { return cities[i].name; });
 
-    // Remove the labels that don't fit. :(
-    groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
-        .remove();
+		// Remove the labels that don't fit. :(
+		groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
+			.remove();
 
-    // Add the chords.
-    var chord = svg.selectAll(".chord")
-        .data(layout.chords)
-      .enter().append("path")
-        .attr("class", "chord")
-        .style("fill", function(d) { return colour(cities[d.source.index].name); })
-        .attr("d", path);
+		// Add the chords.
+		var chord = svg.selectAll(".chord")
+			.data(layout.chords)
+		  .enter().append("path")
+			.attr("class", "chord")
+			.style("fill", function(d) { return colour(cities[d.source.index].name); })
+			.attr("d", path);
 
-    // Add an elaborate mouseover title for each chord.
-    chord.append("title").text(function(d) {
-      return cities[d.source.index].name
-          + " → " + cities[d.target.index].name
-          + ": " + chordLabel(d.source.value)
-          + "\n" + cities[d.target.index].name
-          + " → " + cities[d.source.index].name
-          + ": " + chordLabel(d.target.value);
-    });
+		// Add an elaborate mouseover title for each chord.
+		chord.append("title").text(function(d) {
+		  return cities[d.source.index].name
+			  + " → " + cities[d.target.index].name
+			  + ": " + chordLabel(d.source.value)
+			  + "\n" + cities[d.target.index].name
+			  + " → " + cities[d.source.index].name
+			  + ": " + chordLabel(d.target.value);
+		});
 
-    function mouseover(d, i) {
-      chord.classed("fade", function(p) {
-        return p.source.index != i
-            && p.target.index != i;
-      });
-    }
-  });
-});
+		function mouseover(d, i) {
+		  chord.classed("fade", function(p) {
+			return p.source.index != i
+				&& p.target.index != i;
+		  });
+		}
+	  });
+	});
+} // end drawChart
+
+//drawChart("vic");
+
 
 </script>
 
-<p>Helo</p>
+<button value="vic" onclick="drawChart(this.value);">Victoria</button><button value="nsw" onclick="drawChart(this.value);">NSW</button>
+
+<p>Senate Preferences in Australian Senate Election 2013</p>
 
 </body>
 
 </html>
+
