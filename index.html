@@ -45,11 +45,13 @@ text { font: 12px sans-serif; }
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="#">Senate Preferences in Australian Senate Election 2013</a>
-        </div>
+		  <span class="pull-right"><a class="brand" href="http://twitter.com/peterneish">@peterneish</a></span>
+		</div>
+		
       </div>
     </div>
 
-<div id="container" class="container-fluid">
+<div id="container" class="container">
 
 <div id="buttons">
 <button class="btn btn-primary" value="act">ACT</button>
@@ -60,37 +62,44 @@ text { font: 12px sans-serif; }
 <button class="btn" value="tas">TAS</button>
 <button class="btn" value="vic">Victoria</button>
 <button class="btn" value="wa">WA</button>
+<a class="pull-right" href="#about"><strong>More info</strong></a>
 </div>
 
 <div id="viz">
 </div>
 
+<a name="about"></a>
+<div class="container span10">
+<h2>About</h2>
+<div class="blurb" class="span8">
+<p>The connecting lines between parties show where one party has preferenced another in the top 25% of the ballot paper.</p>
 
-<div class="blurb" class="span12"><p>This visualisation works by first grouping preference into group tickets. 
-It does this for parties and also for independent groups.</p>
-<p>
+<p>The width of the party around the circle shows how many other parties have preferenced it in the top 25% of the ballot paper.</p> 
+
+<p>This visualisation works by first grouping preference into group tickets for both parties and independent groups.
 It then works out the aveage position each ticket gives to candidates on each other ticket. 
-If the average is in the top 25% of the preferences the we class this as being preferenced highly. If the party is preferenced highly they will have a 
-thicker line pointing to them on the chart.
+If the average is in the top 25% of the preferences then we show it on the diagram. You can see if parties are preferencing each other or if 
+the relationship is not symmetrical. See <a href="http://peter.neish.net/visualising-election-2013/">this blog post</a> for more discussion on how 
+I went about this or have a look at the <a href="https://github.com/peterneish/preferences">code</a>.
 </p>
+
 <p>
-While this gives us a quick overview, in reality it's a lot more complex and the preference order is particularly important.</p>
+While this gives us a quick overview, in reality it's a lot more complex and the preference order is particularly important.
+</p>
 <p>For a full list of all preferences I recommend <a href="http://www.belowtheline.org.au/">belowtheline.org.au</a>. Also have a look at <a href="https://www.openaustraliafoundation.org.au/2013/08/26/an-experiment-in-visualising-preferences/">this visualisation by Open Australia</a>.
 </p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 <div style="clear:both;"></div>
 </div>
 
-<div class="navbar navbar-fixed-bottom" id="footer">
+<div>
 		
-			<p class="muted credit pull-right">Visualisation using <a href="http://d3js.org">d3js</a> by <a href="http://twitter.com/peterneish">@peterneish</a>,
+			<p class="muted credit">Visualisation using <a href="http://d3js.org">d3js</a> by <a href="http://twitter.com/peterneish">@peterneish</a>,
 			data from the <a href="http://www.aec.gov.au">Australian Electoral Commission</a>, code on <a href="https://github.com/peterneish/preferences">GitHub</a>.
 			</p>
 			
 		</div>
-</div>
 
+</div>
 
 
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -107,7 +116,7 @@ var w = window,
     y = w.innerHeight|| e.clientHeight || g.clientHeight;
 
 var width = Math.max( x * 0.95, 900 ),  //width
-    height = Math.max( y * 0.95, 720 ); //height
+    height = Math.max( y * 0.80, 620 ); //height
 
 var outerRadius = Math.min(width, height) / 2 - 70,
 
@@ -239,14 +248,6 @@ function drawChart(state){
       })
 				.text(function(d,i) { return tickets[i].name; });
 			
-
-		//groupText.append("textPath")
-			//.attr("xlink:href", function(d, i) { return "#group" + i; })
-			//.text(function(d, i) { return tickets[i].name; });
-
-		// Remove the labels that don't fit. :(
-		//groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
-		//	.remove();
 
 		// Add the chords.
 		var chord = svg.selectAll(".chord")
