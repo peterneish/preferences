@@ -27,6 +27,8 @@ path.chord {
   display: none;
 }
 
+.viztitle { font: 10px sans-serif; }
+
 body {
 padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
@@ -79,15 +81,20 @@ text { font: 12px sans-serif; }
 <p>This visualisation works by first grouping preference into group tickets for both parties and independent groups.
 It then works out the aveage position each ticket gives to candidates on each other ticket. 
 If the average is in the top 25% of the preferences then we show it on the diagram. You can see if parties are preferencing each other or if 
-the relationship is not symmetrical. See <a href="http://peter.neish.net/visualising-election-2013/">this blog post</a> for more discussion on how 
-I went about this or have a look at the <a href="https://github.com/peterneish/preferences">code</a>.
+the relationship is not symmetrical. 
 </p>
 
 <p>
 While this gives us a quick overview, in reality it's a lot more complex and the preference order is particularly important.
+For a full list of all preferences I recommend <a href="http://www.belowtheline.org.au/">belowtheline.org.au</a>. Also have a look at <a href="https://www.openaustraliafoundation.org.au/2013/08/26/an-experiment-in-visualising-preferences/">this visualisation by Open Australia</a>.
 </p>
-<p>For a full list of all preferences I recommend <a href="http://www.belowtheline.org.au/">belowtheline.org.au</a>. Also have a look at <a href="https://www.openaustraliafoundation.org.au/2013/08/26/an-experiment-in-visualising-preferences/">this visualisation by Open Australia</a>.
+
+<p>See <a href="http://peter.neish.net/visualising-election-2013/">this blog post</a> for more discussion on how 
+I went about creating this site, or have a look at the <a href="https://github.com/peterneish/preferences">code</a>. 
+The visualisation code relied heavily on <a href="http://bost.ocks.org/mike/uberdata/">this example by Mike Bostock</a>.
 </p>
+
+
 <div style="clear:both;"></div>
 </div>
 
@@ -164,12 +171,15 @@ function drawChart(state){
 	var svg = d3.select("#viz").append("svg")
 		.attr("width", width)
 		.attr("height", height)
-	  .append("g")
+	    .append("g")
 		.attr("id", "circle")
 		.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+		
+	var title = d3.selectAll("svg").append("text").attr("x", 12).attr("y", 12).text("viz by @peterneish").attr("class", "viztitle");
 
-	svg.append("circle")
-		.attr("r", outerRadius);
+	
+		
+
 
 
 	
