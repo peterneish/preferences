@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Direction of Preferences Australian Federal Election 2013</title>
+<style>
+#circle circle {
+  fill: none;
+  pointer-events: all;
+}
+
+.group path {
+  fill-opacity: .5;
+}
+
+path.chord {
+  stroke: #000;
+  stroke-width: .25px;
+}
+
+
+#blurb, #buttons, #viz { margin: 25px 0; }
+#blurb { margin-bottom: 50px; }
+
+#footer { background-color: #ccc; }
+
+#circle:hover path.fade {
+  display: none;
+}
+
+.viztitle { font: 10px sans-serif; }
+
+body {
+padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+text { font: 12px sans-serif; }
+#footer { margin-right:10px; }
+
+
+
+</style>
+
+<link href="bootstrap.css" rel="stylesheet">
+ 
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Senate Preferences in Australian Senate Election 2013</a>
+		  <span class="pull-right"><a class="brand" href="http://twitter.com/peterneish">@peterneish</a></span>
+		</div>
+		
+      </div>
+    </div>
+
+<div id="container" class="container">
+
+<div id="buttons">
+<button class="btn btn-primary" value="act">ACT</button>
+<button class="btn" value="nsw">NSW</button>
+<button class="btn" value="nt">NT</button>
+<button class="btn" value="qld">QLD</button>
+<button class="btn" value="sa">SA</button>
+<button class="btn" value="tas">TAS</button>
+<button class="btn" value="vic">Victoria</button>
+<button class="btn" value="wa">WA</button>
+<a class="pull-right" href="#about"><strong>More info</strong></a>
+</div>
+
+<div id="viz">
+</div>
+
+<a name="about"></a>
+<div class="container span10">
+<h2>About</h2>
+<div class="blurb" class="span8">
+<p>The connecting lines between parties show where one party has preferenced another in the top 25% of the ballot paper.</p>
+
+<p>The width of the party around the circle shows how many other parties have preferenced it in the top 25% of the ballot paper.</p> 
+
+<p>This visualisation works by first grouping preference into group tickets for both parties and independent groups.
+It then works out the aveage position each ticket gives to candidates on each other ticket. 
+If the average is in the top 25% of the preferences then we show it on the diagram. You can see if parties are preferencing each other or if 
+the relationship is not symmetrical. 
+</p>
+
+<p>
+While this gives us a quick overview, in reality it's a lot more complex and the preference order is particularly important.
+For a full list of all preferences I recommend <a href="http://www.belowtheline.org.au/">belowtheline.org.au</a>. Also have a look at <a href="https://www.openaustraliafoundation.org.au/2013/08/26/an-experiment-in-visualising-preferences/">this visualisation by Open Australia</a>.
+</p>
+
+<p>There is some information on how I went about creating this site at <a href="http://peter.neish.net/visualising-election-2013/">this blog post</a>.
+The visualisation code relied heavily on <a href="http://bost.ocks.org/mike/uberdata/">this example by Mike Bostock</a>.
+</p>
+
+
+<div style="clear:both;"></div>
+</div>
+
+<div>
+
+	<p class="muted credit">Visualisation using <a href="http://d3js.org">d3js</a> by <a href="http://twitter.com/peterneish">@peterneish</a>,
+	     data from the <a href="http://www.aec.gov.au">Australian Electoral Commission</a>, code on <a href="https://github.com/peterneish/preferences">GitHub</a>.
+	</p>
+			
+</div>
+
+</div> <!-- container -->
+
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+
+// calculate window size
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementById("viz"),
+    x = g.clientWidth || w.innerWidth || e.clientWidth,
+    y = w.innerHeight|| e.clientHeight || g.clientHeight;
+
+var width = Math.max( x * 0.95, 900 ),  //width
+    height = Math.max( y * 0.80, 620 ); //height
+
+var outerRadius = Math.min(width, height) / 2 - 70,
+
+    innerRadius = outerRadius - 24;
+var formatPercent = d3.format("g");
+
+var colour = d3.scale.category20();
+
+var chordLabel = d3.scale.quantile()
+	      .domain([0,1])
+  	  .range(["do not preference highly", "preference highly the"]);
+
+
+// function chordLabel(d){ return d; }
+var arc = d3.svg.arc()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius);
+
+var layout = d3.layout.chord()
+    .padding(.04)
+    .sortSubgroups(d3.descending)
+    .sortChords(d3.ascending);
+
+var path = d3.svg.chord()
+    .radius(innerRadius);
+
+var svg = d3.select("#viz").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("id", "circle")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+svg.append("circle")
+    .attr("r", outerRadius);
+	
+	
+function drawChart(state){
+
+
+
+	// clear existing data
+	d3.select("svg").remove();
+
+	var svg = d3.select("#viz").append("svg")
+		.attr("width", width)
+		.attr("height", height)
+	    .append("g")
+		.attr("id", "circle")
+		.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+		
+	var title = d3.selectAll("svg").append("text").attr("x", 12).attr("y", 12).text("viz by @peterneish").attr("class", "viztitle");
+
+	
+		
+
+
+
+	
+    // get the right file
+	
+	var base = "data/processed_data/";
+	var csv_file = base + state + "-gvt_processed.csv";
+	var json_file = base + state + "-gvt_processed.json";
+	
+	d3.csv(csv_file, function(tickets) {
+	  d3.json(json_file, function(matrix) {
+
+		// We first need to scale the data.
+		// We want a low average preference to be a large value,
+		// so we need to invert and then scale the results
+	
+		// first convert the 2d matrix into a single array
+		var matrix_1d = [];
+		for(var i = 0; i < matrix.length; i++){
+			matrix_1d = matrix_1d.concat(matrix[i]);
+		}
+		
+		var scalePref = d3.scale.quantile()
+						.domain([d3.min(matrix_1d), d3.max(matrix_1d)])
+						.range([1,0,0,0]);
+		
+		// we need to transform the matrix so that the rows are
+		// columns ie. our value will be the preferences received rather
+		// than the preferences given - this makes more sense visually (trust me)
+		
+		var rev_matrix = matrix[0].map(function(col, i) {
+			return matrix.map(function(row) {
+				return row[i];
+			});
+		});
+		
+		
+		// now scale our matrix
+		for(var i = 0; i < rev_matrix.length; i++){
+			for(var x =0; x < rev_matrix[i].length; x++){
+				rev_matrix[i][x] = scalePref(rev_matrix[i][x]);
+			}
+		}
+		
+	  
+		// Compute the chord layout.
+		layout.matrix(rev_matrix);
+
+		// Add a group per neighborhood.
+		var group = svg.selectAll(".group")
+			.data(layout.groups)
+		  .enter().append("g")
+			.attr("class", "group")
+			.on("mouseover", mouseover);
+
+		// Add a mouseover title.
+		group.append("title").text(function(d, i) {
+		  return tickets[i].name;
+		});
+
+		// Add the group arc.
+		var groupPath = group.append("path")
+			.attr("id", function(d, i) { return "group" + i; })
+			.attr("d", arc)
+			.style("fill", function(d, i) { return colour(tickets[i].name); });
+
+		// Add a text label.
+		var groupText = group.append("text")
+		    .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
+			.attr("x", 6)
+			.attr("dy", ".35em")
+			.attr("transform", function(d) {
+        return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+            + "translate(" + (innerRadius + 26) + ")"
+            + (d.angle > Math.PI ? " " : "");
+      })
+				.text(function(d,i) { return tickets[i].name; });
+			
+
+		// Add the chords.
+		var chord = svg.selectAll(".chord")
+			.data(layout.chords)
+		  .enter().append("path")
+			.attr("class", "chord")
+			.style("fill", function(d) { return colour(tickets[d.source.index].name); })
+			.attr("d", path);
+
+		// Add an elaborate mouseover title for each chord.
+		chord.append("title").text(function(d) {
+
+		  ret = "";
+		  source_name = tickets[d.source.index].name;
+		  target_name = tickets[d.target.index].name;
+
+		  if(d.source.value && d.target.value){
+			if(source_name == target_name){
+				ret = source_name + " preferences itself highly";
+			}
+			else{
+				ret = source_name + " and " + 
+			              target_name + " preference each other highly";
+			}
+		  }
+		  else if(!d.source.value && !d.source.value){
+			ret = "Neither " + source_name + " or " + 
+			      target_name + " preference each other highly";
+		  }
+		  else if(!d.source.value){
+			ret =  source_name + " preferences " + 
+			      target_name + " highly, but not the other way around";
+		  }
+		  else if(!d.target.value){
+			ret =  target_name + " preferences " + 
+			      source_name + " highly, but not the other way around";
+		  }
+			
+		  return ret;
+
+		});
+
+		function mouseover(d, i) {
+		  chord.classed("fade", function(p) {
+
+			return p.source.index != i
+				&& p.target.index != i;
+		  });
+
+		  chord.filter( function(d) { return d.source.index == i || d.target.index == i; })
+		       .style("fill", function(d) { return colour(tickets[i].name); });
+		  
+		}
+	  });
+	});
+	
+
+	
+	
+} // end drawChart
+
+
+jQuery( document ).ready(function() {
+	$('button').click(function(){
+		drawChart($(this).val());
+		$("button").removeClass("btn-primary");
+		$(this).addClass("btn-primary");
+	});
+	
+	
+	drawChart("act");
+
+});
+
+</script>
+
+
+
+</body>
+
+</html>
+
